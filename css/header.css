@@ -1,0 +1,153 @@
+ 
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url(/img/header/headerbackground.png) center/cover no-repeat;
+    height: 100vh;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* padding: 0 40px; */
+  }
+  
+  .header__nav {
+    color: black;
+    font-weight: 700;
+    /* background-color: rgba(255, 251, 0, 0.3); */
+  }
+  
+  .nav__top {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 45px;
+    background-color: rgb(224, 227, 228);
+  }
+  
+  .nav__top-container {
+    line-height: 45px;
+  }
+
+  .top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .top__mail-link {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+  }
+  
+  .top__phone-link {
+    color: black;
+    margin-right: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  .nav__bottom {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    height: 92px;  
+    background-color: rgb(246, 246, 247);
+  }
+  
+  .nav__bottom-container {
+    line-height: 92px;
+  }
+
+  .bottom-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .london-logo {
+    display: block;
+    width: 165px;
+    
+  }
+  
+  .bottom-list {
+    display: flex;
+    list-style: none;
+  }
+  
+  .list__item {
+    margin: 0 10px;
+  }
+  
+  .list__link {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+  }
+  
+  .top__phone-box {
+    display: flex;
+  }
+  
+  .nav__bottom-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .icons__item {
+    display: flex;
+    align-items: center;
+  }
+
+  .icon__link {
+    display: block;
+    margin-left: 15px;
+    font-size: 27px;
+    text-decoration: none;
+    color: rgb(220, 52, 52);
+  }
+
+  .header__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-grow: 1;
+    color: beige;
+  }
+
+  .content__block {
+    margin-left: -600px;
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 50px;
+    width: 500px;
+    padding: 50px;
+    background-color: rgba(23, 23, 23, 0.6);
+  }
+
+  .content__text {
+    /* font-size: 24px; */
+    line-height: 35px;
+  }
+  
+  .content__button {
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: rgba(229, 15, 15, 0.6);
+    border-radius: 3px;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .content__name,
+  .content__text,
+  .content__button {
+    margin-bottom: 50px;
+  }
+  
