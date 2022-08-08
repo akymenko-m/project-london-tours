@@ -9,6 +9,7 @@
 :root {
     scroll-behavior: smooth;
     font-family: 'Istok Web', sans-serif;
+    --red-color: #d51f48;
 }
 
 /* img {
