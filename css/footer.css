@@ -1,0 +1,109 @@
+.contacts__container {
+    background-color: rgb(33 33 33);
+}
+
+.contacts__header {
+    font-family: 'Istok Web', sans-serif;
+    color: var(--red-color);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 90px 0px 30px 0px;
+}
+
+.contacts__about {
+    padding: 0px 25px 0px 25px;
+}
+
+.contacts__article {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.contacts__text-contact-us {
+    font-size: 19px;
+    font-weight: 400;
+    color: var(--white-color);
+}
+
+.contacts__advertisment-about-us {
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--footer-light-grey-color);
+    margin-top: 25px;
+}
+
+.contacts__form {
+    margin-top: 25px;
+    margin-bottom: 50px;
+    font-size: 14px;
+    font-weight: 700;
+
+}
+
+.contacts__form-link {
+    text-decoration: none;
+    color: var(--white-color)
+}
+
+.contacts__form-link:active {
+    text-decoration: underline;
+}
+
+.contacts__info {
+    margin: 0px 25px 0px 25px;
+}
+
+.contacts__address,
+.contacts__phone,
+.contacts__schedule,
+.contacts__email {
+    font-family: 'Ubuntu', Medium, sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--white-color);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contacts__text-address,
+.contacts__text-hours {
+    color: var(--footer-light-grey-color);
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.contacts__hours {
+    font-weight: 700;
+}
+
+.contacts__text-phone {
+    margin-bottom: 20px;
+}
+
+.contacts__text-email {
+    margin-bottom: 70px;
+}
+
+.contacts__phone-link,
+.contacts__email-link {
+    text-decoration: none;
+    color: var(--footer-light-grey-color);
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.contacts__phone-link:active,
+.contacts__email-link:active {
+    text-decoration: underline;
+}
+
+.footer__dividing-line {
+    width: 272px;
+    margin: auto;
+}
