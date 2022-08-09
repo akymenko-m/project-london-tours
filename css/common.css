@@ -12,7 +12,13 @@
     --red-color: #d51f48;
 }
 
-/* img {
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+img {
     display: block;
     width: 100%;
-} */
+}
+
