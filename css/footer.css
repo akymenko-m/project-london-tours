@@ -139,7 +139,61 @@
 }
 
 .banks-logo {
+    padding-left: 15px;
+    margin-bottom: 50px;
+    display: block;
+}
+
+.nav-text {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--white-color);
     text-align: center;
+}
+
+.long-line {
+    width: 41px;
     margin: auto;
-    width: 272px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-color: var(--red-text-color);
+    border-top: 2px var(--red-text-color) solid;;
+}
+
+.footer__text-link {
+    text-decoration: none;
+    color: var(--footer-light-grey-color);
+    font-size: 17px;
+    font-weight: 700;
+    display: block;
+    text-align: center;
+}
+
+.footer__text-link:active {
+    text-decoration: underline;
+}
+
+.for-travellers-text {
+    margin-top: 50px;
+    font-size: 22px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    color: var(--white-color);
+    text-align: center;
+}
+
+.footer__inst-text {
+    margin-top: 50px;
+    font-size: 22px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    color: var(--white-color);
+    text-align: center;
+}
+
+.footer__gallery {
+    display: flex;
+    width: 128.5px;
+    flex-wrap: wrap;
 }
