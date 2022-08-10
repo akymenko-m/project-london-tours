@@ -1,0 +1,10 @@
+.section__tours .tours__about-london {
+    background-color: var(--light-grey-background-color);
+    padding: 100px 40px
+}
+
+.section__tours .tours__about-london .tours__info-block {
+    display: flex;
+    flex-direction: column;
+
+}

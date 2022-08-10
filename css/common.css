@@ -10,12 +10,24 @@
 :root {
     scroll-behavior: smooth;
     font-family: 'Istok Web', sans-serif;
-    --red-color: #d51f48;
+    font-family: 'Ubuntu',sans-serif;
+    --red-text-color: #d51f48;
     --white-color: #fff;
+    --black-color: #000;
     --footer-light-grey-color: #bbb;
+    --dark-grey-text-color : rgb(79, 79, 79);
+    --light-grey-text-color: rgb(141, 141, 141);
+    --light-grey-background-color: rgba(0, 0, 0, 0.071);
+    --transparent-black-color: rgba(33, 33, 33, 0.864);
+    scroll-behavior: smooth;
 }
 
-/* img {
+.container {
+    max-width: 980px;
+    margin: auto;
+}
+
+img {
     display: block;
     width: 100%;
-} */
+}
