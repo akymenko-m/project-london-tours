@@ -4,7 +4,7 @@
 
 .contacts__header {
     font-family: 'Istok Web', sans-serif;
-    color: var(--red-color);
+    color: var(--red-text-color);
     font-size: 12px;
     font-weight: 700;
     padding: 90px 0px 30px 0px;
@@ -106,4 +106,40 @@
 .footer__dividing-line {
     width: 272px;
     margin: auto;
+    border-color: var(--line-grey-color);
+    border-top: none;
+}
+
+.address-logo,
+.phone-logo,
+.hours-logo,
+.email-logo {
+    width: 50px;
+}
+
+.footer__slogan {
+    margin-top: 70px;
+    padding: 0px 25px 0px 25px;
+}
+
+.footer-logo {
+    width: 210px;
+    text-align: center;
+    cursor: pointer;
+    margin: auto;
+}
+
+.footer__text-slogan {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--footer-light-grey-color);
+}
+
+.banks-logo {
+    text-align: center;
+    margin: auto;
+    width: 272px;
 }
