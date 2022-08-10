@@ -52,7 +52,7 @@
     background-color: var(--white-color);
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 980px) {
     .nav__bottom {
       height: 92px;
     }
@@ -68,7 +68,7 @@
     align-items: stretch;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 980px) {
     .bottom-container {
       align-items: center;
     }
@@ -80,7 +80,7 @@
     padding-top: 20px;       
   }
     
-  @media (min-width: 1200px) {    
+  @media (min-width: 980px) {    
     .london-logo {
       padding-top: 0;    
     }
@@ -90,13 +90,13 @@
     display: block;
   }
   
-  @media (min-width: 1200px) {
+  @media (min-width: 980px) {
     .header__menu-media {
       display: flex;
     }  
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 980px) {
     .bottom-list {
       display: flex;
       list-style: none;
@@ -163,7 +163,7 @@
     transform: scale(0.5);
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 980px) {
     .header__content {
       display: flex;
       flex-direction: row;    
@@ -185,9 +185,9 @@
     background-color: rgba(23, 23, 23, 0.6);
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 980px) {
     .content__block {
-      margin-left: -600px;
+      margin-left: -490px;
     }
   }
 
@@ -198,9 +198,9 @@
   .content__button {
     padding: 10px 15px;
     text-decoration: none;
-    background-color: var(--red-color);
+    background-color: var(--red-text-color);
     border-radius: 3px;
-    color: white;
+    color: var(--white-color);
     font-size: 16px;
   }
   
@@ -208,6 +208,11 @@
   .content__text,
   .content__button {
     margin-bottom: 50px;
+  }
+
+  .content__button:hover {
+    color: var(--black-color);
+    background-color: var(--white-color);
   }
 
   
