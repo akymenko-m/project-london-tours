@@ -1,0 +1,74 @@
+
+/* .overview__hotels-partners .hotels-partners__image {
+    padding: 5px;
+    background-color: rgb(187 187 187) ;
+} */
+
+.why-dhoose-us__items .why-dhoose-us__descr {
+    border: 2px solid rgb(243, 241, 241);
+    padding: 20px 20px;
+    margin: 15px;
+}
+
+.overview__header {
+    color: var(--red-color);
+    font-family: inherit;
+    text-align: center;
+}
+
+.overview__subheading {
+    text-align: center;
+}
+
+.overview__text {
+    text-align: center;
+}
+
+.why-dhoose-us__header {
+    color: var(--red-color);
+    font-family: inherit;
+    text-align: center;
+}
+
+.why-dhoose-us__subheading {
+    text-align: center;
+}
+
+.why-dhoose-us__text {
+    text-align: center;
+}
+
+@media (min-width: 600px) {
+    .overview__hotels-partners {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 900px) {
+    .overview__hotels-partners {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 980px) {
+    .overview__hotels-partners {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 600px) {
+    .why-dhoose-us__items {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 900px) {
+    .why-dhoose-us__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
