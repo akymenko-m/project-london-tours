@@ -1,15 +1,9 @@
-#burger-checkbox {
+/* #burger-checkbox {
     display: none;
 }
-
-
 
 #burger-checkbox:checked ~ .header__menu-media {
     display: block;
-}
-
-.header__menu-media {
-    display: none;
 }
 
 .burger-icon {
@@ -19,16 +13,8 @@
     cursor: pointer;
 }
 
-
-
 @media (min-width: 1200px) {
     .burger-icon {
         display: none;
     }
-
-    .header__menu-media {
-      display: flex;
-    }
-    
-  
-}
+} */
