@@ -1,0 +1,27 @@
+#team {
+    background-color: var(--background-color-lightgrey) ;
+}
+
+.our-team__header {
+    color: var(--red-text-color);
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+}
+
+.our-team__subheading {
+    color: var(--black-color);
+    font-style: Ubuntu;
+    font-size: 28px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.our-team__guides {
+    color: var(--dark-grey-text-color);
+    font-size: 19px;
+    text-align: center;
+}
+.lydia_mason {
+    display: flex;
+}
