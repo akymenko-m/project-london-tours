@@ -1,0 +1,35 @@
+.places-title {
+    text-align: center;
+    padding: 20px;
+}
+.places__header {
+    color: var(--red-text-color);
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18.48px;
+}
+.places__subtitle {
+    color: var(--subtitle-grey-color);
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 36.4px;
+}
+.motto {
+    color: var(--subtitle-grey-color);
+    font-size: 19px;
+    line-height: 26.03px;
+}
+/*.museum-title {
+    color: var(--subtitle-grey-color);
+    font-size: 22px;
+    text-align: center;
+}
+.museum-description {
+    color: var(--light-grey-text-color);
+}*/
+.read-more-places {
+    color: var(--red-text-color);
+    font-size: 12px;
+    line-height: 18.48px;
+    font-weight: 700;
+}

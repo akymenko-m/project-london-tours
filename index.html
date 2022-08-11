@@ -8,6 +8,8 @@
   <title>London Tours</title>
   <link rel="stylesheet" href="css/index.css">
   <link rel="icon" type="image/png" href="img/title-icon/site-icon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -230,44 +232,74 @@
 
     <!--Maryana Places block start-->
     <section id="places" class="places">
-      <h2 class="places__header"><span>- PLACES -</span></h2><br>
-      <p class="subtitle">What To See In London.</p><br>
-      <p class="motto">London is full of attractions and sights. Hurry up, they're waiting!</p><br>
+      <div class="places-title">
+        <h2 class="places__header"><span>- PLACES -</span></h2><br>
+        <p class="places__subtitle">What To See In London.</p><br>
+        <p class="motto">London is full of attractions and sights. Hurry up, they're waiting!</p><br>
+      </div>
 
-      <div class="places__cards">
-        <article class="cards__museum">
-          <img src="img/places/national_history_museum.png" alt="national history museum">
-          <h2>The Natural History Museum</h2>
-          <p><span>The Natural History Museum in London is one of the three largest museum in South
-              Kensington. The collection of the museum includes more than 70 million exhibits on botany,
-              zoology, entomology, mineralogy, and paleontology. But the museum is best known for its
-              unique collection of dinosaur skeletons, which includes the sceleton of a diplodocus 26
-              meters long and a model of Tyrannosaurus.</span></p>
-          <a href="https://yp34v.weblium.site/"><span>Read more</span></a>
-        </article>
-
-        <article class="cards__buckingham"><br>
-          <img src="img/places/buckinham_palace.png" alt="buckingham palace">
-          <h2>Buckingham Palace</h2>
-          <p><span>Buckingham Palace has serves as a residence of British monarcs since 1837. This luxurious
-              complex is one of the few active palaces in the world. State Rooms are constantly used by
-              Her
-              Majesty and her family members for dinner parties, official receptions, and other special
-              occasions. In August-September, when Elizabeth II leaves her residence, all 19 state rooms
-              become available for visitors.</span></p>
-          <a href="https://yp34v.weblium.site/"><span>Read more</span></a>
-        </article>
-
-        <article class="cards__gardens"><br>
-          <img src="img/places/kew_garden.png" alt="kew gardens">
-          <h2>Kew Gardens</h2>
-          <p><span>Kew Gardens cover an area of 121 hectaresand is a UNESCO World Heritage Site. It is the
-              largest botanical garden in the world - more than 30 thousand different varieties of living
-              plant are cultivated in it; there is a large horticultural library and a archive of
-              drawings, a research center, a breeding center, and a large seed bank. Scientific work is
-              constantly being carried out there in various fields of gardening.</span></p>
-          <a href="https://yp34v.weblium.site/"><span>Read more</span></a>
-        </article>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="places-carousel-image" src="img/places/national_history_museum.png"
+              alt="national_history_museum">
+            <div class="carousel-caption d-md-block">
+              <h2 class="places-carousel-title">The Natural History Museum</h2>
+              <p class="places-carousel-text">The Natural History Museum in London is one of the three largest museum in
+                South
+                Kensington. The collection of the museum includes more than 70 million exhibits on botany,
+                zoology, entomology, mineralogy, and paleontology. But the museum is best known for its
+                unique collection of dinosaur skeletons, which includes the sceleton of a diplodocus 26
+                meters long and a model of Tyrannosaurus.</p>
+              <a class="read-more-places" href="https://yp34v.weblium.site/"><span>Read more →</span></a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="places-carousel-image" src="img/places/buckinham_palace.png" alt="buckinham_palace">
+            <div class="carousel-caption d-md-block">
+              <h2 class="places-carousel-title">Buckingham Palace</h2>
+              <p class="places-carousel-text">Buckingham Palace has serves as a residence of British monarcs since 1837. This luxurious
+                complex is one of the few active palaces in the world. State Rooms are constantly used by
+                Her
+                Majesty and her family members for dinner parties, official receptions, and other special
+                occasions. In August-September, when Elizabeth II leaves her residence, all 19 state rooms
+                become available for visitors.</p>
+              <a class="read-more-places" href="https://yp34v.weblium.site/"><span>Read more →</span></a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="places-carousel-image" src="img/places/kew_garden.png" alt="kew_garden">
+            <div class="carousel-caption d-md-block">
+              <h2 class="places-carousel-title">Kew Gardens</h2>
+              <p class="places-carousel-text"><span>Kew Gardens cover an area of 121 hectaresand is a UNESCO World Heritage Site. It is the
+                  largest botanical garden in the world - more than 30 thousand different varieties of living
+                  plant are cultivated in it; there is a large horticultural library and a archive of
+                  drawings, a research center, a breeding center, and a large seed bank. Scientific work is
+                  constantly being carried out there in various fields of gardening.</span></p>
+              <a class="read-more-places" href="https://yp34v.weblium.site/"><span>Read more →</span></a>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      </article>
       </div>
     </section>
     <!--Maryana Places block end-->
@@ -320,79 +352,93 @@
     </section> <!-- section_overview-khrystyna-end -->
 
     <!--Section Team Mariia begin-->
-    <section id="team" class="team container">
-      <div class="team__our-team">
-        <h2 class="our-team__header">-&nbsp;TEAM&nbsp;-</h2>
-        <p class="our-team__subheading">Our Professional Guides.</p>
-        <p class="our-team__guides">Our team consists of highly experienced and broadminded guides.</p>
-      </div>
+    <section id="team" class="team">
+      <div class="container">
+        <div class="team__our-team">
+          <h2 class="our-team__header">-&nbsp;TEAM&nbsp;-</h2>
+          <p class="our-team__subheading">Our Professional Guides.</p>
+          <p class="our-team__guides">Our team consists of highly experienced and broadminded guides.</p>
+        </div>
 
-      <div id="team__button" class="team__button">
-        <img class="button__previous" src="img/team/team_button_previous.png" alt="Button previous" width="30">
-      </div>
+        <div id="team__button" class="team__button">
+          <img class="button__previous" src="img/team/team_button_previous.png" alt="Button previous">
+        </div>
+        <div class="team__button">
+          <img class="button__next" src="img/team/team_button_next.png" alt="Button next">
+        </div>
 
-      <div id="lydia_mason" class="lydia_mason">
-        <img class="lydia_mason__photo" src="img/team/lydia_mason__photo.png" alt="Lydia Mason" width="800">
-        <div class="lydia_mason__general">
-          <h3 class="lydia_mason__name">Lydia Mason</h3>
-          <h4 class="lydia_mason__position"><em>Guide and owner</em></h4>
-          <p class="lydia_mason__profile-part-1">Ms. Mason was born in London and started exploring it from an early
-            age.
-            When she was 12, Lydia already organised city quests at school and shared her London experience with
-            friends.
-          </p>
-          <p class="lydia_mason__profile-part-2">Now she does the same on the international award-winning level as the
-            founder and the principal guide of London Tours.</p>
-          <div>
-            <img class="team__icon-location" src="img/team/icon_location.png" alt="Icon location" width="30">
-            <p class="lydia_mason__tours">Night Tours; Gastro Tours; VIP Tours.</p>
+        <div id="lydia_mason" class="lydia_mason">
+          <div class="lydia_mason__container-photo">
+            <img class="lydia_mason__photo" src="img/team/lydia_mason__photo.png" alt="Lydia Mason">
           </div>
-          <div>
-            <img class="team__icon-phone-call" src="img/team/icon_phone_call.png" alt="Icon phone call" width="30">
-            <a class="team__contacts" href="tel:+1(234)5678900">+1 (234) 567 89 00</a>
+          <div class="lydia_mason__general">
+            <h3 class="lydia_mason__name">Lydia Mason</h3>
+            <div class="team__line"></div>
+            <h4 class="lydia_mason__position"><em>Guide and owner</em></h4>
+            <p class="lydia_mason__profile-past">Ms. Mason was born in London and started exploring it from an early
+              age. When she was 12, Lydia already organised city quests at school and shared her London experience with
+              friends.
+            </p>
+            <p class="lydia_mason__profile-now">Now she does the same on the international award-winning level as the
+              founder and the principal guide of London Tours.</p>
+            <div class="team__container-location">
+              <img class="team__icon-location" src="img/team/icon_location.png" alt="Icon location">
+              <p class="lydia_mason__tours">Night Tours; Gastro Tours; VIP Tours.</p>
+            </div>
+            <div class="team__container-phone">
+              <img class="team__icon-phone-call" src="img/team/icon_phone_call.png" alt="Icon phone call">
+              <a class="team__contacts" href="tel:+1(234)5678900">+1 (234) 567 89 00</a>
+            </div>
           </div>
-
         </div>
-      </div>
 
-      <div class="team__button">
-        <img class="button__next" src="img/team/team_button_next.png" alt="Button next" width="30">
-      </div>
+        <div id="leah_marsden" class="leah_marsden">
+          <div class="leah_marsden__container-photo">
+            <img class="leah_marsden__photo" src="img/team/leah_marsden_photo.png" alt="Leah_Marsden">
+          </div>
+          <div class="leah_marsden__general">
+            <h3 class="leah_marsden__name">Leah Marsden</h3>
+            <div class="team__line"></div>
+            <h4 class="leah_marsden__position"><em>Guide and manager</em></h4>
+            <p class="leah_marsden__profile-past">Leah Marsden joined the company the first month after its
+              foundation. She genuinely believed in the idea of London Tours and shared the passion of exploring the
+              city with
+              Lydia.
+            </p>
+            <p class="leah_marsden__profile-now">She also created the majority of existing tours and now manages the
+              communication with clients.</p>
+            <div class="team__container-location">
+              <img class="team__icon-location" src="img/team/icon_location.png" alt="Icon location">
+              <p class="leah_marsden__tours">Exploring History; Bus Tours; VIP Tours.</p>
+            </div>
+            <div class="team__container-phone">
+              <img class="team__icon-phone-call" src="img/team/icon_phone_call.png" alt="Icon phone call">
+              <a class="team__contacts" href="tel:+1(234)5678900">+1 (234) 567 89 00</a>
+            </div>
+          </div>
+        </div>
 
-      <div id="leah_marsden" class="leah_marsden">
-        <img class="leah_marsden__photo" src="img/team/Leah_Marsden_photo.png" alt="Leah_Marsden" width="800">
-        <h3 class="leah_marsden__name">Leah Marsden</h3>
-        <h4 class="leah_marsden__position"><em>Guide and manager</em></h4>
-        <p class="leah_marsden__profile-part-1">Leah Marsden joined the company the first month after its foundation.
-          She genuinely believed in the idea of London Tours and shared the passion of exploring the city with Lydia.
-        </p>
-        <p class="leah_marsden__profile-part-2">She also created the majority of existing tours and now manages the
-          communication with clients.</p>
-        <div>
-          <img class="team__icon-location" src="img/team/icon_location.png" alt="Icon location" width="30">
-          <p class="leah_marsden__tours">Exploring History; Bus Tours; VIP Tours.</p>
-        </div>
-        <div>
-          <img class="team__icon-phone-call" src="img/team/icon_phone_call.png" alt="Icon phone call" width="30">
-          <a class="team__contacts" href="tel:+1(234)5678900">+1 (234) 567 89 00</a>
-        </div>
-      </div>
-
-      <div id="bailey_lawson" class="bailey_lawson">
-        <img class="bailey_lawson__photo" src="img/team/Bailey_Lawson_photo.png" alt="Bailey_Lawson" width="800">
-        <h3 class="bailey_lawson__name">Bailey_Lawson</h3>
-        <h4 class="bailey_lawson__position"><em>School group guide</em></h4>
-        <p class="bailey_lawson__profile-part-1">A teacher himself, Mr. Lawson knows how to make the trip interesting
-          for children of different age. He can make any excursion really interesting for children and teens.</p>
-        <p class="bailey_lawson__profile-part-2">Bailey is in charge of handling quests, including hunted house
-          exploration and solving the mysteries of night London.</p>
-        <div>
-          <img class="team__icon-location" src="img/team/icon_location.png" alt="Icon location" width="30">
-          <p class="bailey_lawson__tours">Night Tours; Bike Tours; Bus Tours.</p>
-        </div>
-        <div>
-          <img class="team__icon-phone-call" src="img/team/icon_phone_call.png" alt="Icon phone call" width="30">
-          <a class="team__contacts" href="tel:+1(234)5678900">+1 (234) 567 89 00</a>
+        <div id="bailey_lawson" class="bailey_lawson">
+          <div class="bailey_lawson__container-photo">
+            <img class="bailey_lawson__photo" src="img/team/bailey_lawson_photo.png" alt="Bailey Lawson">
+          </div>
+          <div class="bailey_lawson__general">
+            <h3 class="bailey_lawson__name">Bailey Lawson</h3>
+            <div class="team__line"></div>
+            <h4 class="bailey_lawson__position"><em>School group guide</em></h4>
+            <p class="bailey_lawson__profile-past">A teacher himself, Mr. Lawson knows how to make the trip interesting
+              for children of different age. He can make any excursion really interesting for children and teens.</p>
+            <p class="bailey_lawson__profile-now">Bailey is in charge of handling quests, including hunted house
+              exploration and solving the mysteries of night London.</p>
+            <div class="team__container-location">
+              <img class="team__icon-location" src="img/team/icon_location.png" alt="Icon location">
+              <p class="bailey_lawson__tours">Night Tours; Bike Tours; Bus Tours.</p>
+            </div>
+            <div class="team__container-phone">
+              <img class="team__icon-phone-call" src="img/team/icon_phone_call.png" alt="Icon phone call">
+              <a class="team__contacts" href="tel:+1(234)5678900">+1 (234) 567 89 00</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
