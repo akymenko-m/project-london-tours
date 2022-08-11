@@ -63,23 +63,14 @@ margin: 15px;}
         font-weight: 200;
     }
 
-    .about__container {
-        max-width: 980px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        position: relative;
-        text-align: center;
-        ;
-    }
+    /* переделать код ниже */
+    
 
     img {
         max-width: 100%;
         max-height: 100%;
     }
+    @media (min-width:800px){.about__container {display: grid;
+        grid-template-columns: 1fr 1fr;}}
 
-    @media (max-width:800px) {
-        .about__container {
-            display: inline-block;
-        }
-    }
+       
