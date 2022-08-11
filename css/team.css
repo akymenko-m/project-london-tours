@@ -1,5 +1,6 @@
 #team {
     background-color: var(--background-color-lightgrey);
+    padding-bottom: 70px;
 }
 
 .our-team__header {
@@ -47,7 +48,11 @@
     width: 100%;
 }
 
-.team__icon-location,
+.team__icon-location {
+    width: 100%;
+    height: 100%;
+    width: 25px;
+}
 .team__icon-phone-call {
     width: 25px;
 }
@@ -111,6 +116,7 @@
 
     .lydia_mason__photo {
         width: 100%;
+        height: 100%;
         object-fit: cover;
         object-position: 60% 40%;
     }
@@ -174,8 +180,9 @@
 
     .leah_marsden__photo {
         width: 100%;
+        height: 100%;
         object-fit: cover;
-        object-position: 60% 40%;
+        object-position: 50% 50%;
     }
 }
 
@@ -237,7 +244,8 @@
 
     .bailey_lawson__photo {
         width: 100%;
+        height: 100%;
         object-fit: cover;
-        object-position: 60% 40%;
+        object-position: 50% 50%;
     }
 }
