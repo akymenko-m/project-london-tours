@@ -1,0 +1,9 @@
+.places-title {
+    text-align: center;
+    padding: 20px;
+}
+.places__header {
+    color: var(--red-text-color);
+    font-weight: bold;
+    font-size: inherit;
+}
