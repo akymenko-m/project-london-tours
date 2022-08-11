@@ -30,4 +30,6 @@
 .read-more-places {
     color: var(--red-text-color);
     font-size: 12px;
+    line-height: 18.48px
+    font-weight: 700px;
 }
