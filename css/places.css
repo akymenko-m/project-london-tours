@@ -19,3 +19,11 @@
     font-size: 19px;
     line-height: 26.03px;
 }
+.museum-title {
+    color: var(--subtitle-grey-color);
+    font-size: 22px;
+    text-align: center;
+}
+.museum-description {
+    color: var(--light-grey-text-color);
+}
