@@ -19,6 +19,7 @@
     --light-grey-text-color: rgb(141, 141, 141);
     --transparent-black-color: rgba(33, 33, 33, 0.864);
     --line-grey-color: rgb(44, 44, 44);
+    --subtitle-grey-color: rgb(71, 71, 71);
     scroll-behavior: smooth;
 }
 
