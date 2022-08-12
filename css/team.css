@@ -32,12 +32,7 @@
 .team__button {
     width: 25px;
 }
-/*
-#carouselExampleControls>carousel-inner>carousel-item {
-    display: flex;
-    flex-direction: column;
-}
-*/
+
 .lydia_mason {
     display: flex;
     flex-direction: column;
@@ -46,7 +41,7 @@
 
 .lydia_mason__general {
     background-color: var(--white-color);
-    padding: 30px 25px 30px 25px;
+    padding: 30px 30px 30px 30px;
 }
 
 .lydia_mason__photo {
@@ -118,7 +113,7 @@
 
 .leah_marsden__general {
     background-color: var(--white-color);
-    padding: 30px 25px 30px 25px;
+    padding: 30px 30px 30px 30px;
 }
 
 .leah_marsden__photo {
@@ -164,7 +159,7 @@
 
 .bailey_lawson__general {
     background-color: var(--white-color);
-    padding: 30px 25px 30px 25px;
+    padding: 30px 30px 30px 30px;
 }
 
 .bailey_lawson__photo {
