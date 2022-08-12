@@ -66,11 +66,11 @@ margin: 15px;}
 
     /* переделать код ниже */
     
-
+/* 
     img {
         max-width: 100%;
         max-height: 100%;
-    }
+    } */
     @media (min-width:800px){.about__container {display: grid;
         grid-template-columns: 1fr 1fr;}}
 

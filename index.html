@@ -18,29 +18,29 @@
 
     <div class="header__nav">
 
-        <div class="nav__top">
-          <div class="container nav__top-container">
-            <div class="top-container">
-              <div class="top__mail">
-                <a class="top__mail-link" href="mailto:londontours@email.com">londontours@email.com</a>
-              </div>
-
-              <div class="top__phone-box">
-                <div class="top__phone">
-                  <a class="top__phone-link" href="tel:+12345678900">+1 (234) 567 89 00</a>
-                </div>
-                <div class="top__lang">
-                  <select id="lang">
-                    <option value="en">English</option>
-                    <option value="fr">Français</option>
-                    <option value="es">Español</option>
-                  </select>
-                </div>
-              </div>
+      <div class="nav__top">
+        <div class="container nav__top-container">
+          <div class="top-container">
+            <div class="top__mail">
+              <a class="top__mail-link" href="mailto:londontours@email.com">londontours@email.com</a>
             </div>
 
+            <div class="top__phone-box">
+              <div class="top__phone">
+                <a class="top__phone-link" href="tel:+12345678900">+1 (234) 567 89 00</a>
+              </div>
+              <div class="top__lang">
+                <select id="lang">
+                  <option value="en">English</option>
+                  <option value="fr">Français</option>
+                  <option value="es">Español</option>
+                </select>
+              </div>
+            </div>
           </div>
+
         </div>
+      </div>
 
       <nav class="navbar navbar-expand-lg bg-light">
         <div class="container">
@@ -80,7 +80,7 @@
                     <div class="top__mail">
                       <a class="top__mail-link" href="mailto:londontours@email.com">londontours@email.com</a>
                     </div>
-        
+
                     <div class="top__phone-box">
                       <div class="top__phone">
                         <a class="top__phone-link" href="tel:+12345678900">+1 (234) 567 89 00</a>
@@ -94,7 +94,7 @@
                       </div>
                     </div>
                   </div>
-        
+
                 </div>
               </div>
 
@@ -241,31 +241,31 @@
     </section>
     <!--katya end-->
     <!--Mashkovska Tours Start-->
-    <section class="section__tours">
+    <section id="tours" class="section__tours">
       <div class="tours__about-london">
-        <div class="tours__info-block container">
+        <div class="tours__info-block">
           <div class="tours__section-name">
-            <p>- TOURS -</p>
+            <span>- TOURS -</span>
           </div>
           <div class="tours__info-text-block">
             <h2 class="tours__topic-name">London Is Always Different.</h2>
-            <p class="about-london_question">
+            <span class="about-london_question">
               Home for the royal family or ultra-modern skyscrapers and trendy
               restaurants?
-            </p>
-            <p class="tours__common-text">
+            </span>
+            <span class="tours__common-text">
               London is a huge city full of sights and attractions. Any time you
               visit it, you can see different sides and find different accents
               in it. The choice is yours!
-            </p>
-            <p class="tours__common-text">
+            </span>
+            <span class="tours__common-text">
               We have a variety of tours that will show you London from
               different points of you. Sign up right now to meet London in its
               beauty!
-            </p>
+            </span>
           </div>
           <div class="tours__info-calls-block">
-            <div class="tours__phone-icon">
+            <div class="tours__phone-icon_block">
               <img src="img/tours/tours-phone-icon.png" alt="tours-phone-icon" class="phone-icon" />
             </div>
             <div class="tours__info-phone-num-block">
@@ -276,23 +276,78 @@
         </div>
         <div class="tours__restaurants-block">
           <div><img src="img/tours/tours-previous.png" alt="tours-previous" class="tours__previous-arrow" /></div>
-          <div class="tours__block">
-            <div class="tour-container">
-              <div class="tour-text-block">
-                <div class="tour__title-block">
-                  <div class="tour-img"><img src="img/tours/tours-royal-london.png" alt="royal-london-img"></div>
-                  <div class="title-text-block">
-                    <span class="tour-title">Royal London</span>
-                    <span class="tour-divide-line">|</span>
-                    <span class="tour-price">now $45</span>
-                  </div>
+          <div class="tours__slide-block">
+            <div class="tours-block">
+              <div class="tour-container">
+                <div class="tours-img-block">
+                  <img src="img/tours/tours-royal-london.png" alt="royal-london-img" class="tour-img">
                 </div>
-                <span class="tours__common-text">The 5-hour journey during which you uncover royal history of
-                  the city and travel through time and culture. Feel an incredible
-                  atmosphere of ancient London and enjoy every moment.The 5-hour
-                  journey during which you uncover royal history of the city and
-                  travel through time and culture. Feel an incredible atmosphere
-                  of ancient London and enjoy every moment.</span>
+                <div class="tour-text-block">
+                  <div class="tour__title-block">
+                    <div class="title-text-block">
+                      <span class="tour-title">Royal London</span>
+                      <span class="tour-divide-line">|</span>
+                      <span class="tour-price">now $45</span>
+                    </div>
+                  </div>
+                  <span class="tours__common-text">The 5-hour journey during which you uncover royal history of
+                    the city and travel through time and culture. Feel an incredible
+                    atmosphere of ancient London and enjoy every moment.</span>
+                </div>
+              </div>
+
+              <div class="tour-container">
+                <div class="tours-img-block">
+                  <img src="img/tours/tours-london-pubs-img.png" alt="pubs-london-img" class="tour-img">
+                </div>
+                <div class="tour-text-block">
+                  <div class="tour__title-block">
+                    <div class="title-text-block">
+                      <span class="tour-title">London Pubs</span>
+                      <span class="tour-divide-line">|</span>
+                      <span class="tour-price">now $30</span>
+                    </div>
+                  </div>
+                  <span class="tours__common-text">Beer or whiskey? We offer them both for our tourists. We will take
+                    you to the most popular bars and pubs with a unique British atmosphere. Just remember to drink
+                    responsibly!</span>
+                </div>
+              </div>
+
+              <div class="tour-container">
+                <div class="tours-img-block">
+                  <img src="img/tours/tours-london-gastro.png" alt="gastro-london-img" class="tour-img">
+                </div>
+                <div class="tour-text-block">
+                  <div class="tour__title-block">
+                    <div class="title-text-block">
+                      <span class="tour-title">London Gastro Tour</span>
+                      <span class="tour-divide-line">|</span>
+                      <span class="tour-price">now $35</span>
+                    </div>
+                  </div>
+                  <span class="tours__common-text">They say, the British have awful cuisine: it's too hearty and
+                    peasant. Well, that's not true in 2021. We will guide you through the best restaurants and cafes in
+                    London and will introduce you to the real modern local cuisine.</span>
+                </div>
+              </div>
+
+              <div class="tour-container">
+                <div class="tours-img-block">
+                  <img src="img/tours/tours-exploratory-quest.png" alt="exploratory-london-img" class="tour-img">
+                </div>
+                <div class="tour-text-block">
+                  <div class="tour__title-block">
+                    <div class="title-text-block">
+                      <span class="tour-title">Exploratory Quest</span>
+                      <span class="tour-divide-line">|</span>
+                      <span class="tour-price">now $50</span>
+                    </div>
+                  </div>
+                  <span class="tours__common-text">Who said that excursions should be long and boring? We believe in the
+                    whole other approach to exploring a new place — that's why we prepared a game for those who want to
+                    exercise their logical thinking and have fun.</span>
+                </div>
               </div>
             </div>
           </div>
