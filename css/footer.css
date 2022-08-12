@@ -193,7 +193,17 @@
 }
 
 .footer__gallery {
-    display: flex;
-    width: 128.5px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer__text-rights {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--white-color);
+    text-align: center;
+}
+
+.footer__icon-social-links {
+    width: 30px;
 }
