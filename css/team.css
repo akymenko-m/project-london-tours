@@ -30,7 +30,11 @@
 }
 
 .team__button {
-    width: 30px;
+    width: 20px;
+}
+#carouselExampleControls > carousel-inner > carousel-item {
+    display: flex;
+    flex-direction: column;
 }
 
 .lydia_mason {
@@ -105,10 +109,12 @@
 }
 
 @media (min-width: 768px) {
+        #carouselExampleControls > carousel-inner > carousel-item {
+        flex-direction: row;
+    }
     .lydia_mason {
         flex-direction: row;
     }
-
     .lydia_mason__container-photo,
     .lydia_mason__general {
         flex: 50%;
