@@ -198,9 +198,12 @@
   }
 
   .navbar {
-  --bs-navbar-nav-link-padding-x: 1.1rem!important;  
+  --bs-navbar-nav-link-padding-x: 1.1rem!important; 
+  }
 
-}
+  .bg-light {
+    background-color: var(--white-color)!important;
+  }
   /* =========== bootstrap css end ============ */
 
 
@@ -209,16 +212,6 @@
     flex-direction: row;    
     align-items: center;
     flex: 2;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform:translate(-50%, -50%);
-  }
-
-  @media (min-width: 992px) {
-    .header__content {
-      left: 25%;
-    }
   }
 
   .content__block {
