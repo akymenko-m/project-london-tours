@@ -7,19 +7,32 @@
     font-size: 15px;
     color: var(--light-grey-text-color);
 }
-.about__info {font-size: 20px;
-font-weight: bold;}
-.about__heading {
-    font-size: smaller;
+
+.about__info {
+    font-size: 20px;
+    font-weight: bold;
 }
-.about__sub {font-weight: 700;
-font-size: x-large;}
+
+.about__heading {
+    font-size: 13px;
+}
+
+.about__sub {
+    font-weight: 700;
+    font-size: x-large;
+    color: var(--line-grey-color);
+}
+
+.about__subhearding {
+    color: var(--subtitle-grey-color);
+}
+
 .about {
     margin: 50px 0;
 }
 
 .numbers {
-    color: #d51f48;
+    color: var(--red-text-color);
 }
 
 @media (max-width:800px) {
@@ -55,20 +68,33 @@ font-size: x-large;}
 .about__part-two,
 .about__part-first {
     text-align: justify;
-margin: 15px;}
+    margin: 15px;
+}
 
-    .about__text-second {
-        color: var(--light-grey-text-color);
+.about__part-first {
+    font-size: 20px;
+}
+
+.about__part-two {
+    font-size: 16px;
+    margin: 5px 15px;
+}
+
+.about__text-second {
+    color: var(--light-grey-text-color);
+    margin: 10px 0;
+}
+
+
+.about__a,
+.about__b {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media (min-width:800px) {
+    .about__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
-
-        /* переделать код ниже */
-    
-
-    .about__a, .about__b {
-        max-width: 100%;
-        max-height: 100%;
-    }
-    @media (min-width:800px){.about__container {display: grid;
-        grid-template-columns: 1fr 1fr;}}
-
-       
+}
