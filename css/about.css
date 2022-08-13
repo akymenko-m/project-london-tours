@@ -4,10 +4,11 @@
     justify-content: center;
     position: relative;
     text-align: left;
-    font-size: smaller;
-    color: rgb(141, 141, 141);
+    font-size: 15px;
+    color: var(--light-grey-text-color);
 }
-
+.about__info {font-size: 20px;
+font-weight: bold;}
 .about__heading {
     font-size: smaller;
 }
@@ -57,20 +58,16 @@ font-size: x-large;}
 margin: 15px;}
 
     .about__text-second {
-        color: rgb(141, 141, 141);
+        color: var(--light-grey-text-color);
     }
 
-    h2 {
-        font-weight: 200;
-    }
-
-    /* переделать код ниже */
+        /* переделать код ниже */
     
-/* 
-    img {
+
+    .about__a, .about__b {
         max-width: 100%;
         max-height: 100%;
-    } */
+    }
     @media (min-width:800px){.about__container {display: grid;
         grid-template-columns: 1fr 1fr;}}
 
