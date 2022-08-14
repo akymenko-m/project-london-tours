@@ -29,7 +29,7 @@
     margin-bottom: 30px;
 }
 
-.team__button {
+.team__btn {
     width: 25px;
 }
 
@@ -232,7 +232,7 @@
         object-position: 60% 40%;
     }
 
-    .team__button {
+    .team__btn {
         width: 30px;
     }
 
