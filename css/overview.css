@@ -1,41 +1,123 @@
+.overview__cover {
+    display: block;
+    height: 970px;
+    width: 770px;
+  }
 
-/* .overview__hotels-partners .hotels-partners__image {
-    padding: 5px;
-    background-color: rgb(187 187 187) ;
-} */
+#overview {
+    padding: 90px 15px;
+}
 
-.why-dhoose-us__items .why-dhoose-us__descr {
-    border: 2px solid rgb(243, 241, 241);
-    padding: 20px 20px;
-    margin: 15px;
+.overview {
+    position: relative;
+}
+
+.overview__overview {
+    position: absolute;
+    top: 90px;
+    left: 50px;
 }
 
 .overview__header {
-    color: var(--red-color);
-    font-family: inherit;
-    text-align: center;
+    color: var(--red-text-color);
+    font-weight: bold;
+    font-size: 12px;
 }
 
 .overview__subheading {
-    text-align: center;
+    color: var(--black-color);
+    font-weight: bold;
+    text-align: left;
+    font-family: "Istok Web" ,sans-serif; 
+    font-weight: 700;
+    font-size: 39px;
 }
 
 .overview__text {
-    text-align: center;
+    color: var(--black-color);
+    text-align: left;
+    font-family: "Istok Web" ,sans-serif;
+    font-weight: 400;
+    font-size: 19px;
 }
 
+.overview__button {
+    margin-bottom: 0;
+    font-weight: 700;
+  }
+
+.overview__button {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: var(--red-text-color);
+    border-radius: 9px;
+    color: var(--white-color);
+    font-size: 15px;
+    width: 140px;
+    line-height: 24px;
+    letter-spacing: 1.5px;
+    font-family: "Istok Web" ,sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  .overview__button:hover {
+    color: var(--white-color);
+    background-color: var(--black-color);
+  }
+
+  .why-dhoose-us__items .why-dhoose-us__descr {
+    border: 2px solid rgb(243, 241, 241);
+    padding: 20px 20px;
+    margin: 15px;
+    align-content: left
+}
+
+.why-dhoose-us__items .why-dhoose-us__descr h3 {
+    color: rgb(71, 71, 71);
+    font-size: 22px;
+    font-family: "Ubuntu", sans-serif;
+    line-height: 28.6px;
+    text-align: left;
+    font-weight: 500;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.why-dhoose-us__items .why-dhoose-us__descr p {
+    color: rgb(141, 141, 141);
+    font-size: 17px;
+    font-family: "Istok Web", sans-serif;
+    line-height: 23.8px;
+    text-align: left;
+    font-weight: 400;
+}
+
+
 .why-dhoose-us__header {
-    color: var(--red-color);
-    font-family: inherit;
+    padding-top: 90px;
+    color: var(--red-text-color);
+    font-weight: bold;
+    font-size: 12px;
     text-align: center;
 }
 
 .why-dhoose-us__subheading {
+    color: var(--black-color);
+    font-weight: bold;
     text-align: center;
+    font-family: "Istok Web" ,sans-serif; 
+    font-weight: 700;
+    font-size: 39px;
 }
 
 .why-dhoose-us__text {
+    color: var(--black-color);
     text-align: center;
+    font-family: "Istok Web" ,sans-serif;
+    font-weight: 400;
+    font-size: 19px;
 }
 
 @media (min-width: 600px) {
@@ -66,9 +148,33 @@
     }
 }
 
+@media (min-width: 750px) {
+    .why-dhoose-us__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 @media (min-width: 900px) {
     .why-dhoose-us__items {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+}
+
+.overview__hotels-partners {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: rgb(0, 0, 0);
+    height: 200px;
+    align-items: center;
+    grid-column: auto;
+}
+
+.overview__hotels-partners .hotels-partners__image {
+    padding: 15px;
+    width:170px;
+    height:130px;
+    object-fit: contain;
+    background-color: #212529;
 }
