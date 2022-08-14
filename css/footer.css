@@ -54,6 +54,10 @@
     text-decoration: underline;
 }
 
+.contacts__form-link:hover {
+    color: var(--white-color);
+}
+
 .contacts__info {
     margin: 0px 25px 0px 25px;
 }
@@ -62,7 +66,7 @@
 .contacts__phone,
 .contacts__schedule,
 .contacts__email {
-    font-family: 'Ubuntu', Medium, sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 22px;
     font-weight: 500;
     color: var(--white-color);
@@ -103,11 +107,19 @@
     text-decoration: underline;
 }
 
+.contacts__phone-link:hover,
+.contacts__email-link:hover {
+    color: var(--footer-light-grey-color);
+    text-decoration: underline;
+}
+
 .footer__dividing-line {
-    width: 272px;
+    width: 100%;
     margin: auto;
-    border-color: var(--line-grey-color);
-    border-top: none;
+    border-bottom: 1px solid var(--white-color);
+    height: 1px;
+    opacity: .2;
+
 }
 
 .address-logo,
@@ -157,8 +169,8 @@
     margin: auto;
     margin-top: 15px;
     margin-bottom: 15px;
-    border-color: var(--red-text-color);
-    border-top: 2px var(--red-text-color) solid;;
+    border-top: 3px var(--red-text-color) solid;
+    ;
 }
 
 .footer__text-link {
@@ -172,6 +184,12 @@
 
 .footer__text-link:active {
     text-decoration: underline;
+    color: var(--white-color);
+}
+
+.footer__text-link:hover {
+    text-decoration: underline;
+    color: var(--white-color);
 }
 
 .for-travellers-text {
@@ -181,6 +199,10 @@
     font-weight: 500;
     color: var(--white-color);
     text-align: center;
+}
+
+.footer__inst {
+    margin-bottom: 30px;
 }
 
 .footer__inst-text {
@@ -193,8 +215,15 @@
 }
 
 .footer__gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 10px 0 10px;
+}
+
+.footer__gallery-img {
+    flex-direction: column;
+    flex: 45%;
 }
 
 .footer__text-rights {
@@ -202,8 +231,17 @@
     font-weight: 400;
     color: var(--white-color);
     text-align: center;
+    padding-top: 20px;
+}
+
+.footer__social-links {
+    margin-top: 30px;
+    text-align: center;
 }
 
 .footer__icon-social-links {
-    width: 30px;
+    width: 14%;
+    display: inline-block;
+    gap: 20px;
+    padding: 0 5px 0 5px;
 }
