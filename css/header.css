@@ -5,6 +5,7 @@
     justify-content: space-between;
     background: url(../img/header/headerbackground.png) center/cover no-repeat;
     height: 100vh;
+    font-family: 'Istok Web', sans-serif;
   }
     
   .header__nav {
@@ -257,14 +258,19 @@
 
 
   .content__name {
+    font-family: "Ubuntu", sans-serif;
+    letter-spacing: 0.1rem;
+    font-stretch: 100%;
     font-size: 18px;
     padding-right: 20px;
   }
 
   @media (min-width: 992px) {
     .content__name {
-      font-size: 30px;
+      font-size: 48px;
       font-weight: 700;
+      line-height: 57.6px;
+      letter-spacing: 0.1rem;
     }
   }
 
@@ -278,7 +284,7 @@
     display: none;
     font-size: 20px;
     line-height: 35px;
-    font-weight: 700;
+    font-weight: 400;
   }
   
   @media (min-width: 992px) {
@@ -325,13 +331,23 @@
   }
 
   /* ============== Modal Form start =============== */
+
+  .modal-body {
+    font-family: "Ubuntu", sans-serif;
+  }
+
   .modal__form-name,
   .modal__form-text {
     text-align: center;
   }
 
+  .modal__form-name {
+    font-weight: 900;
+  }
+
   .btn-danger {
     background-color: var(--red-text-color);
   }
+
     
   /* ============== Modal Form finish =============== */
