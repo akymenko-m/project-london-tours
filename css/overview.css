@@ -8,6 +8,11 @@
     padding: 90px 15px;
 }
 
+@media (min-width: 350) {
+    .overview__cover {
+        width: fit-content;
+    }
+}
 .overview {
     position: relative;
 }
@@ -22,23 +27,6 @@
     color: var(--red-text-color);
     font-weight: bold;
     font-size: 12px;
-}
-
-.overview__subheading {
-    color: var(--black-color);
-    font-weight: bold;
-    text-align: left;
-    font-family: "Istok Web" ,sans-serif; 
-    font-weight: 700;
-    font-size: 39px;
-}
-
-.overview__text {
-    color: var(--black-color);
-    text-align: left;
-    font-family: "Istok Web" ,sans-serif;
-    font-weight: 400;
-    font-size: 19px;
 }
 
 .overview__button {
@@ -120,24 +108,110 @@
     font-size: 19px;
 }
 
+@media (min-width: 350px) {
+    .overview__hotels-partners {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(0, 0, 0);
+        height: auto;
+        align-items: center;
+    }
+
+    .overview__hotels-partners .hotels-partners__image {
+        padding: 15px;
+        width:270px;
+        height:170px;
+        object-fit: contain;
+        background-color: #212529;
+    }
+    .overview__subheading {
+        color: var(--black-color);
+        font-weight: bold;
+        text-align: left;
+        font-family: "Istok Web" ,sans-serif; 
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    .overview__text {
+        color: var(--black-color);
+        text-align: left;
+        font-family: "Istok Web" ,sans-serif;
+        font-weight: 200;
+        font-size: 10px;
+    }
+    
+}
+
 @media (min-width: 600px) {
     .overview__hotels-partners {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        background-color: rgb(0, 0, 0);
+        height: 600px;
+        align-items: center;
+        grid-column: auto;
     }
+
+    .overview__hotels-partners .hotels-partners__image {
+        padding: 15px;
+        width:270px;
+        height:170px;
+        object-fit: contain;
+        background-color: #212529;
+    }
+
+    .overview__subheading {
+        color: var(--black-color);
+        font-weight: bold;
+        text-align: left;
+        font-family: "Istok Web" ,sans-serif; 
+        font-weight: 700;
+        font-size: 39px;
+    }
+    
+    .overview__text {
+        color: var(--black-color);
+        text-align: left;
+        font-family: "Istok Web" ,sans-serif;
+        font-weight: 400;
+        font-size: 19px;
+    }
+    
 }
 
-@media (min-width: 900px) {
+@media (min-width: 700px) {
     .overview__hotels-partners {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        background-color: rgb(0, 0, 0);
+        height: 400px;
+        align-items: center;
+        grid-column: auto;
+    }
+
+    .overview__hotels-partners .hotels-partners__image {
+        padding: 15px;
+        width:220px;
+        height:160px;
+        object-fit: contain;
+        background-color: #212529;
     }
 }
 
-@media (min-width: 980px) {
+@media (min-width: 1000px) {
     .overview__hotels-partners {
         display: grid;
+        height: 200px;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .overview__hotels-partners .hotels-partners__image {
+        padding: 15px;
+        width:170px;
+        height:130px;
+        object-fit: contain;
+        background-color: #212529;
     }
 }
 
@@ -160,21 +234,4 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
-}
-
-.overview__hotels-partners {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    background-color: rgb(0, 0, 0);
-    height: 200px;
-    align-items: center;
-    grid-column: auto;
-}
-
-.overview__hotels-partners .hotels-partners__image {
-    padding: 15px;
-    width:170px;
-    height:130px;
-    object-fit: contain;
-    background-color: #212529;
 }
