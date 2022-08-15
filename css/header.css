@@ -226,9 +226,9 @@
   /* =========== bootstrap css end ============ */
 
 
-  .header__content {
+  /* .header__content {
     display: none;
-  }
+  } */
 
   @media (min-width: 992px) {
     .header__content {
