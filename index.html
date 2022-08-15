@@ -128,7 +128,69 @@
             <p class="content__text">We invite you on a date with the marvellous city of London. It's going to be
               awesome.
             </p>
-            <a class="content__button" href="#">Book&nbspa&nbspTour</a>
+            <a class="content__button" 
+              data-bs-toggle="modal"
+              data-bs-target="#myModal" 
+              href="#">
+              Book&nbspa&nbspTour
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <h3 class="modal__form-name">Welcome to London!</h3>
+              <p class="modal__form-text">
+                Thinking about visiting London or already there? Don't hesitate
+                to contact us.
+              </p>
+              <div class="mb-3">
+                <label class="form-label" required>Your name*</label>
+                <input type="text" class="form-control" />
+              </div>
+              <div class="mb-3">
+                <label class="form-label" required>Phone number*</label>
+                <input type="tel" class="form-control" />
+              </div>
+              <div class="mb-3">
+                <label class="form-label" required>Email</label>
+                <input type="email" class="form-control" />
+              </div>
+              <div class="mb-3">
+                <label class="form-label" required>Tour*</label>
+                <input type="text" class="form-control" />
+              </div>
+              <div class="mb-3">
+                <label class="form-label" required
+                  >The language you speak*</label
+                >
+                <input type="text" class="form-control" />
+              </div>
+              <fieldset class="mb-3">
+                <label class="form-label" required>Choose date</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  value="2022-08-15"
+                  min="2018-01-01"
+                  max="2022-12-31"
+                />
+              </fieldset>
+              <div class="d-grid gap-2 col-12 mx-auto">
+                <button type="submit" class="btn btn-danger">SEND</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>

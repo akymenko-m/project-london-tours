@@ -324,5 +324,14 @@
     background-color: var(--white-color);
   }
 
-  
-  
+  /* ============== Modal Form start =============== */
+  .modal__form-name,
+  .modal__form-text {
+    text-align: center;
+  }
+
+  .btn-danger {
+    background-color: var(--red-text-color);
+  }
+    
+  /* ============== Modal Form finish =============== */
