@@ -1,0 +1,141 @@
+#testimonials {
+    margin: 0 20px 0 20px;
+}
+
+.testimonials__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonials__header {
+    color: var(--red-text-color);
+    font-weight: bold;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: left;
+    padding-top: 80px;
+}
+
+.testimonials__subheading {
+    color: var(--black-color);
+    font-family: "Ubuntu";
+    font-size: 28px;
+    text-align: left;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.testimonials__our-pride {
+    color: var(--dark-grey-text-color);
+    font-size: 19px;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.testimonials__leave-a-review {
+    font-family: 'Istok Web';
+    color: var(--light-grey-text-color);
+    font-size: 14px;
+    font-style: italic;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.testimonials__go-to-trustpilot {
+    border: 1px solid var(--red-text-color);
+    border-radius: 10px;
+    background-color: var(--red-text-color);
+    color: var(--white-color);
+    text-decoration: none;
+    outline: none;
+    padding: 20px 25px 20px 25px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.reviews__alan-richards,
+.reviews__jeff-adams {
+    border: 1px solid var(--footer-light-grey-color);
+    margin: 50px 0 80px 0;
+    padding-bottom: 30px;
+}
+
+.reviews__image-quote {
+    width: 100%;
+    height: 100%;
+    width: 75px;
+    margin: 20px;
+}
+
+.jeff-adams__name,
+.alan-richards__name {
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 0 20px 0 20px;
+}
+
+.alan-richards__review,
+.jeff-adams__review {
+    margin-top: 20px;
+}
+
+.alan-richards__review,
+.alan-richards__selected-tour,
+.jeff-adams__review,
+.jeff-adams__selected-tour {
+    font-family: 'Istok Web';
+    font-size: 17px;
+    color: var(--light-grey-text-color);
+    padding: 0 30px 0 30px;
+}
+
+.reviews__datetime {
+    color: var(--dark-grey-text-color);
+    font-size: 14px;
+    font-style: italic;
+    padding: 0 30px 0 30px;
+}
+
+@media (min-width: 767px) {
+    .testimonials__subheading {
+        font-size: 39px;
+    }
+}
+
+@media (min-width: 991px) {
+    .testimonials__container {
+        flex-direction: row;
+    }
+
+    .testimonials__testimonials {
+        flex: 0 0 30%;
+        padding-right: 30px;
+    }
+
+    .testimonials__header {
+        font-size: 13px;
+    }
+
+    .testimonials__subheading {
+        font-size: 44px;
+    }
+
+    .testimonials__leave-a-review {
+        font-size: 15px;
+    }
+
+    .jeff-adams__name,
+    .alan-richards__name {
+        font-size: 30px;
+    }
+
+    .jeff-adams__name,
+    .alan-richards__name {
+        font-size: 27px;
+    }
+
+}
