@@ -13,7 +13,7 @@
     font-size: 12px;
     font-weight: 700;
     text-align: left;
-    padding-top: 80px;
+    padding-top: 20px;
 }
 
 .testimonials__subheading {
@@ -45,12 +45,13 @@
 
 .testimonials__go-to-trustpilot {
     border: 1px solid var(--red-text-color);
-    border-radius: 10px;
+    border-radius: 8px;
     background-color: var(--red-text-color);
     color: var(--white-color);
     text-decoration: none;
+    text-align: center;
     outline: none;
-    padding: 20px 25px 20px 25px;
+    padding: 15px 25px 15px 25px;
     font-size: 15px;
     font-weight: 700;
 }
@@ -65,8 +66,8 @@
 .reviews__image-quote {
     width: 100%;
     height: 100%;
-    width: 75px;
-    margin: 20px;
+    width: 50px;
+    margin: 25px;
 }
 
 .jeff-adams__name,
@@ -75,7 +76,7 @@
     font-style: normal;
     font-size: 24px;
     font-weight: 500;
-    padding: 0 20px 0 20px;
+    padding: 0 25px 0 30px;
 }
 
 .alan-richards__review,
@@ -142,5 +143,4 @@
     .alan-richards__name {
         font-size: 27px;
     }
-
 }
