@@ -1,6 +1,7 @@
 .tours__background {
     background-color: var(--background-color-lightgrey);
 }
+
 @media (min-width: 320px) {
     .section__tours .tours__about-london {
         display: flex;
@@ -19,7 +20,7 @@
         font-weight: bold;
         font-size: 12px;
     }
-    
+
     .section__tours .tours__about-london .tours__info-block .tours__info-text-block .tours__topic-name {
         font-size: 28px;
     }
@@ -38,16 +39,99 @@
     .section__tours .tours__restaurants-block .tours__previous-arrow,
     .section__tours .tours__restaurants-block .tours__next-arrow {
         width: 24px;
+        cursor: pointer;
     }
 
     .tours-img-block .tour-img {
         border-radius: 50%;
         width: 70px;
-        }
+    }
 
     .tour-container {
-            align-items: flex-start
-        }
+        align-items: flex-start
+    }
+
+    .bus-tours-info-block {
+        background-color: var(--transparent-black-color);
+        width: max-content;
+        display: flex;
+        flex-direction: column;
+        color: var(--white-color);
+        padding: 30px 15px;
+        gap: 15px;
+    }
+
+    .book-tours__arrow {
+        width: 64px;
+        height: 64px;
+        cursor: pointer;
+    }
+
+
+
+    .price-block {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .price-block .price-from {
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .price-block .price {
+        font-size: 22px;
+        font-weight: bold;
+        color: var(--red-text-color);
+    }
+
+    .book-tour__title {
+        font-family: 'Ubuntu';
+        font-weight: bold;
+        font-size: 28px;
+    }
+
+    .book-tour__description {
+        font-size: 19px;
+    }
+
+    .duration-icon {
+        width: 16px;
+        height: 18px;
+    }
+
+    .book-tour__details {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .book-tour__details .details {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        align-items: center;
+    }
+
+    .book-tour__details .details .details-title-text {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .book-tour__details .details .details-text {
+        font-size: 14px;
+    }
+
+    .book-tour__button {
+        background-color: var(--red-text-color);
+        color: var(--white-color);
+        font-size: 15px;
+        font-weight: bold;
+        width: max-content;
+        padding: 10px 20px;
+        border-radius: 8px;
+    }
 
 }
 
@@ -72,41 +156,122 @@
     }
 
     .section__tours .tours__about-london .tours__info-block .tours__info-text-block .tours__topic-name {
-    font-size: 44px;
+        font-size: 44px;
     }
 
-.section__tours .tours__about-london .tours__info-block .tours__info-calls-block .phone-icon {
-    width: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.section__tours .tours__about-london .tours__info-block .tours__info-calls-block .tours__info-phone-num-block .book_tour_now {
-    font-size: 15px;
-}
+    .section__tours .tours__about-london .tours__info-block .tours__info-calls-block .phone-icon {
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-.section__tours .tours__restaurants-block .tours__previous-arrow
-.section__tours .tours__restaurants-block .tours__next-arrow {
-width: 48px;
-}
+    .section__tours .tours__about-london .tours__info-block .tours__info-calls-block .tours__info-phone-num-block .book_tour_now {
+        font-size: 15px;
+    }
 
-.tours-img-block .tour-img {
-    border-radius: 50%;
-    width: 120px;
+    .section__tours .tours__restaurants-block .tours__previous-arrow .section__tours .tours__restaurants-block .tours__next-arrow {
+        width: 48px;
+    }
+
+    .tours-img-block .tour-img {
+        border-radius: 50%;
+        width: 120px;
     }
 
     .tour-container {
         align-items: center;
     }
 
+    .bus-tours-info-block {
+        background-color: var(--transparent-black-color);
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        color: var(--white-color);
+        padding: 35px;
+        gap: 15px;
+        margin-right: 500px;
+    }
+
+    .book-tours__arrow {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+
+    .price-block {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .price-block .price-from {
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    .price-block .price {
+        font-size: 22px;
+        font-weight: bold;
+        color: var(--red-text-color);
+    }
+
+    .book-tour__title {
+        font-family: 'Ubuntu';
+        font-weight: bold;
+        font-size: 44px;
+    }
+
+    .book-tour__description {
+        font-size: 19px;
+    }
+
+    .duration-icon {
+        width: 20px;
+        height: 24px;
+    }
+
+    .book-tour__details {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .book-tour__details .details {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        align-items: center;
+    }
+
+    .book-tour__details .details .details-title-text {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .book-tour__details .details .details-text {
+        font-size: 14px;
+    }
+
+    .book-tour__button {
+        background-color: var(--red-text-color);
+        color: var(--white-color);
+        font-size: 15px;
+        font-weight: bold;
+        width: max-content;
+        padding: 10px 20px;
+        border-radius: 8px;
+    }
+
 }
 
 
 .section__tours .tours__about-london .tours__info-block .tours__info-text-block .tours__topic-name {
-    color: var( --black-color);
+    color: var(--black-color);
     font-weight: bold;
     text-align: left;
-    font-family: "Ubuntu"; 
+    font-family: "Ubuntu";
 }
 
 .section__tours .tours__about-london .tours__info-block .tours__info-text-block {
@@ -120,6 +285,7 @@ width: 48px;
     color: var(--light-grey-text-color);
     font-size: 17px;
 }
+
 .section__tours .tours__about-london .tours__info-block .tours__info-text-block .about-london_question {
     color: var(--dark-grey-text-color);
     font-size: 19px;
@@ -136,7 +302,7 @@ width: 48px;
 .section__tours .tours__about-london .tours__info-block .tours__info-calls-block .tours__phone-icon_block {
     background-color: var(--white-color);
     padding: 15px;
-    border-radius: 50%;   
+    border-radius: 50%;
 }
 
 .tours__info-phone-num-block {
@@ -152,6 +318,7 @@ width: 48px;
     font-size: 22px;
     font-weight: 500;
 }
+
 .section__tours .tours__restaurants-block {
     display: flex;
     flex-direction: row;
@@ -185,12 +352,12 @@ width: 48px;
 }
 
 .tour-divide-line {
-    color: rgba(141, 141, 141, 0.36); 
+    color: rgba(141, 141, 141, 0.36);
     font-size: 18px
 }
 
 .tour-price {
-    font-weight: bold; 
+    font-weight: bold;
     color: var(--red-text-color);
     font-size: 18px;
     font-family: "Ubuntu" sans-serif;
@@ -207,17 +374,72 @@ width: 48px;
     background: url(../img/tours/tours-background-img-bus-tour.png) center/cover no-repeat;
     height: 100vh;
     align-items: center;
-    justify-content: center;
-    display:flex ;
-    padding: 15px;
+    justify-content: space-between;
+    display: flex;
+    padding: 7px;
+    gap: 10px;
 }
 
-.bus-tours-info-block {
-    background-color: var(--transparent-black-color);
-    width: max-content;
+.bike-tours-block {
+    background: url(../img/tours/tours-background-img-bike-tour.png) center/cover no-repeat;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
     display: flex;
-    flex-direction: column;
-    color: var(--white-color);
-    padding: 30px 15px;
-    gap: 15px;
+    padding: 7px;
+    gap: 10px;
+}
+
+.explor-history-tours-block {
+    background: url(../img/tours/tours-background-img-explor-history.png) center/cover no-repeat;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    padding: 7px;
+    gap: 10px;
+}
+
+.gastro-tours-block {
+    background: url(../img/tours/tours-background-img-gastro-tour.png) center/cover no-repeat;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    padding: 7px;
+    gap: 10px;
+}
+
+.night-tours-block {
+    background: url(../img/tours/tours-background-img-night-tour.png) center/cover no-repeat;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    padding: 7px;
+    gap: 10px;
+}
+
+.vip-tours-block {
+    background: url(../img/tours/tours-background-img-vip-tour.png) center/cover no-repeat;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    padding: 7px;
+    gap: 10px;
+}
+
+.carousel{
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel__item,
+.carousel__item-hidden {
+    display: none;
+}
+
+.carousel__item-visible {
+    display: block;
 }
