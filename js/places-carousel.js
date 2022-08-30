@@ -16,7 +16,7 @@
   let currentPlacesSlideIdx = 0;
 
   function renderPlacesCarousel() {
-    const placesCarouselCont = document.querySelector('places-carousel__slides');
+    const placesCarouselCont = document.querySelector('.places-carousel__slides');
     placesCarouselCont.innerHTML = placesSlides[currentPlacesSlideIdx];
   }
 
