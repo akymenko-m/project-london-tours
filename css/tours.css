@@ -430,16 +430,11 @@
     gap: 10px;
 }
 
-.carousel{
-    overflow: hidden;
-    position: relative;
-}
-
-.carousel__item,
-.carousel__item-hidden {
-    display: none;
-}
-
-.carousel__item-visible {
-    display: block;
+.book-tour__arrows {
+    cursor: pointer;
+    font-size: 35px;
+    text-decoration: none;
+    border: none;
+    color: var(--light-grey-text-color);
+    background-color: transparent;
 }

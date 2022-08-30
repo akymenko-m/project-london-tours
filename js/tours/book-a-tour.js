@@ -3,7 +3,6 @@
     {
       id: "1",
       backgrClass: "bus-tours-block",
-      // visibleClass: "carousel__item-visible",
       priceInfo: 80,
       titleInfo: "Bus Tours.",
       descriptionInfo:
@@ -17,7 +16,6 @@
     {
       id: "2",
       backgrClass: "night-tours-block",
-      // visibleClass: "carousel__item-hidden",
       priceInfo: 230,
       titleInfo: "Night Tours.",
       descriptionInfo:
@@ -31,7 +29,6 @@
     {
       id: "3",
       backgrClass: "bike-tours-block",
-      // visibleClass: "carousel__item-hidden",
       priceInfo: 230,
       titleInfo: "Bike Tours.",
       descriptionInfo:
@@ -45,7 +42,6 @@
     {
       id: "4",
       backgrClass: "gastro-tours-block",
-      // visibleClass: "carousel__item-hidden",
       priceInfo: 100,
       titleInfo: "Bike Tours.",
       descriptionInfo:
@@ -59,7 +55,6 @@
     {
       id: "5",
       backgrClass: "vip-tours-block",
-      // visibleClass: "carousel__item-hidden",
       priceInfo: 500,
       titleInfo: "VIP Tours.",
       descriptionInfo:
@@ -73,7 +68,6 @@
     {
       id: "6",
       backgrClass: "explor-history-tours-block",
-      // visibleClass: "carousel__item-hidden",
       priceInfo: 500,
       titleInfo: "Explorying History.",
       descriptionInfo:
@@ -85,82 +79,60 @@
     },
   ];
 
-  function bookingTourInfo(tourInfo) {
-    const infoContainer = document.querySelector(".book-tour-block");
-    infoContainer.innerHTML = "";
-    for (const info of tourInfo) {
-      infoContainer.innerHTML += `
-            <div class="${info.backgrClass}">
-            <div class="book-tours__arrow"><img src="img/tours/tours-previous.png" alt="tours-previous" id="tours__previous-arrow" /></div>
+  function bookingTourInfo(currentSlideIndex) {
+    return `
+            <div class="${tourInfo[currentSlideIndex].backgrClass}">
             <div class="bus-tours-info-block">
               <div class="price-block">
                 <span class="price-from">from</span>
-                <span class="price">$${info.priceInfo}</span>
+                <span class="price">$${tourInfo[currentSlideIndex].priceInfo}</span>
               </div>
-              <span class="book-tour__title">${info.titleInfo}</span>
-              <span class="book-tour__description">${info.descriptionInfo}</span>
+              <span class="book-tour__title">${tourInfo[currentSlideIndex].titleInfo}</span>
+              <span class="book-tour__description">${tourInfo[currentSlideIndex].descriptionInfo}</span>
               <div class="book-tour__details">
                 <div class="details">
                   <div class="duration-icon"><img src="img/tours/book-tour-duration.png" alt="tour-duration"></div>
                   <span class="details-title-text">Duration:</span>
-                  <span class="details-text">${info.durationInfo}</span>
+                  <span class="details-text">${tourInfo[currentSlideIndex].durationInfo}</span>
                 </div>
                 <div class="details">
                   <div class="duration-icon"><img src="img/tours/book-tour-date.png" alt="tour-date"></div>
                   <span class="details-title-text">Months:</span>
-                  <span class="details-text">${info.monthsInfo}</span>
+                  <span class="details-text">${tourInfo[currentSlideIndex].monthsInfo}</span>
                 </div>
                 <div class="details">
                   <div class="duration-icon"><img src="img/tours/book-tour-people.png" alt="tour-people"></div>
-                  <span class="details-title-text">${info.amountTitleText}</span>
-                  <span class="details-text">${info.amountInfo}</span>
+                  <span class="details-title-text">${tourInfo[currentSlideIndex].amountTitleText}</span>
+                  <span class="details-text">${tourInfo[currentSlideIndex].amountInfo}</span>
                 </div>
               </div>
               <div class="book-tour__button">Book a Tour</div>
             </div>
-            <div class="book-tours__arrow"><img src="img/tours/tours-next.png" alt="tours-next" id="tours__next-arrow" /></div>
           </div>`;
-    }
   }
-  bookingTourInfo(tourInfo);
 
-  // let slidePosition = 0;
-  // const slides = document.getElementsByClassName('carousel__item');
-  // const totalSlides = slides.length;
-  // console.log(slides);
+  let currentSlideIndex = 0;
 
-  // document.getElementById('tours__next-arrow').addEventListener("click", function(){
-  //     moveToNextSlide();
-  // });
+  function renderCarousel() {
+    const toursInfoContainer = document.querySelector(".book-tour-block");
+    toursInfoContainer.innerHTML = bookingTourInfo(currentSlideIndex);
+  }
 
-  // document.getElementById('tours__previous-arrow').addEventListener("click", function(){
-  //     moveToPrevSlide();
-  // });
+  function next() {
+    currentSlideIndex =
+      currentSlideIndex + 1 >= tourInfo.length ? 0 : currentSlideIndex + 1;
+    renderCarousel();
+  }
 
-  // function updateSlidePosition() {
-  //     for (let slide of slides) {
-  //         slide.classList.remove('carousel__item-visible');
-  //         slide.classList.add('carousel__item-hidden');
-  //     }
+  function prev() {
+    currentSlideIndex =
+      currentSlideIndex - 1 < 0 ? tourInfo.length - 1 : currentSlideIndex - 1;
+    renderCarousel();
+  }
 
-  //     slides[slidePosition].classList.add('carousel__item-visible');
-  // }
+  setInterval(next, 5000);
 
-  // function moveToNextSlide() {
-  //     if (slidePosition === totalSlides - 1) {
-  //         slidePosition = 0;
-  //     } else {
-  //         slidePosition++;
-  //     }
-  //     updateSlidePosition();
-  // }
+  window.addEventListener("resize", renderCarousel);
 
-  // function moveToPrevSlide() {
-  //     if (slidePosition === 0) {
-  //         slidePosition = totalSlides - 1;
-  //     } else {
-  //         slidePosition--;
-  //     }
-  //     updateSlidePosition();
-  // }
+  renderCarousel();
 })();
