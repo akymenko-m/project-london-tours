@@ -44,6 +44,10 @@
   function renderPlacesCarousel() {
     const placesCarouselCont = document.querySelector('.places-carousel__slides');
     placesCarouselCont.innerHTML = placesSlides[currentPlacesSlideIdx];
+    if (window.clientWidth > 800) {
+      const secondPlacesSlideIdx = currentPlacesSlideIdx + 1 >= placesSlides.length ? 0 : currentPlacesSlideIdx + 1;
+      placesCarouselCont.innerHTML += placesSlides[secondPlacesSlideIdx];
+    }
   }
 
   function nextPlace() {
