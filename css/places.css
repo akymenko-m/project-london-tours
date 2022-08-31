@@ -1,3 +1,7 @@
+.places-carousel {
+    display: flex;
+    
+}
 .places-title {
     text-align: center;
     padding: 20px;
@@ -19,17 +23,23 @@
     font-size: 19px;
     line-height: 26.03px;
 }
-/*.museum-title {
+.museum-title {
     color: var(--subtitle-grey-color);
     font-size: 22px;
     text-align: center;
 }
 .museum-description {
     color: var(--light-grey-text-color);
-}*/
+}
 .read-more-places {
     color: var(--red-text-color);
     font-size: 12px;
     line-height: 18.48px;
     font-weight: 700;
+}
+.carousel-places-slide {
+    width: 40%;
+    margin:auto;
+    text-align: center;
+    min-height: 915px;
 }
