@@ -2,15 +2,41 @@
   const placesSlides = [
         `<div class="carousel-places-slide">
             <img class="places-carousel-image" src="img/places/national_history_museum.png" alt="national_history_museum">
-        </div>`,
+            <h2 class="places-carousel-title">The Natural History Museum</h2>
+            <p class="places-carousel-text">The Natural History Museum in London is one of the three largest museum in
+              South
+              Kensington. The collection of the museum includes more than 70 million exhibits on botany,
+              zoology, entomology, mineralogy, and paleontology. But the museum is best known for its
+              unique collection of dinosaur skeletons, which includes the sceleton of a diplodocus 26
+              meters long and a model of Tyrannosaurus.</p>
+            <a class="read-more-places" href="https://yp34v.weblium.site/"><span>Read more →</span></a>
+          </div>`,
 
         `<div class="carousel-places-slide">
           <img class="places-carousel-image" src="img/places/buckinham_palace.png" alt="buckinham_palace">
+          <h2 class="places-carousel-title">Buckingham Palace</h2>
+          <p class="places-carousel-text">Buckingham Palace has serves as a residence of British monarcs since 1837.
+              This luxurious
+              complex is one of the few active palaces in the world. State Rooms are constantly used by
+              Her
+              Majesty and her family members for dinner parties, official receptions, and other special
+              occasions. In August-September, when Elizabeth II leaves her residence, all 19 state rooms
+              become available for visitors.</p>
+            <a class="read-more-places" href="https://yp34v.weblium.site/"><span>Read more →</span></a>
           </div>`,
 
         `<div class="carousel-places-slide">
           <img class="places-carousel-image" src="img/places/kew_garden.png" alt="kew_garden">
-        </div>`
+          <h2 class="places-carousel-title">Kew Gardens</h2>
+          <p class="places-carousel-text">Buckingham Palace has serves as a residence of British monarcs since 1837.
+              This luxurious
+              complex is one of the few active palaces in the world. State Rooms are constantly used by
+              Her
+              Majesty and her family members for dinner parties, official receptions, and other special
+              occasions. In August-September, when Elizabeth II leaves her residence, all 19 state rooms
+              become available for visitors.</p>
+            <a class="read-more-places" href="https://yp34v.weblium.site/"><span>Read more →</span></a>
+          </div>`
   ];
 
   let currentPlacesSlideIdx = 0;
