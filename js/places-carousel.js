@@ -51,7 +51,16 @@
     renderPlacesCarousel();
   }
 
-  setInterval(nextPlace, 2000);
+  function prevPlace() {
+    currentPlacesSlideIdx = currentPlacesSlideIdx - 1 < 0 ? placesSlides.length-1 : currentPlacesSlideIdx - 1;
+    renderPlacesCarousel();
+  }
+
+ const nextBtnPlaces = document.querySelector('.places-carousel__btn-next');
+ nextBtnPlaces.addEventListener('click', nextPlace);
+
+ const prevBtnPlaces = document.querySelector('.places-carousel__btn-prev');
+ prevBtnPlaces.addEventListener('click', prevPlace);
 
   renderPlacesCarousel();
 
