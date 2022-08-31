@@ -36,6 +36,42 @@
       tourDescription:
         "Who said that excursions should be long and boring? We believe in the whole other approach to exploring a new place — that's why we prepared a game for those who want to exercise their logical thinking and have fun. ",
     },
+    {
+      id: "5",
+      tourImg: "img/tours/tours-born-here.jpg",
+      tourImgAlt: "tours-born-here",
+      tourTitle: "They Were Born Here ",
+      tourPrice: 35,
+      tourDescription:
+        "Did you know that London is a hometown of many great personalities in British and worldwide history? If you didn't, you might be interested in exploring the life paths of those people.",
+    },
+    {
+      id: "6",
+      tourImg: "img/tours/tours-shopping.png",
+      tourImgAlt: "tours-shopping",
+      tourTitle: "Shopping Tour",
+      tourPrice: 35,
+      tourDescription:
+        "Have you known that London is home to the world's leading luxury department store and it's a tourist attraction itself? On this 4-hour journey, we explore the most remarkable city's shopping spots.",
+    },
+    {
+      id: "7",
+      tourImg: "img/tours/tours-london-galleries.jpg",
+      tourImgAlt: "tours-galleries",
+      tourTitle: "Galleries and Sights ",
+      tourPrice: 35,
+      tourDescription:
+        "Although London often reminds of a museum itself, with its old streets and cosy corners, it's still worthwhile to take a look at the most remarkable city's achievements from above — from the London Eye.",
+    },
+    {
+      id: "8",
+      tourImg: "img/tours/tours-london-local.png",
+      tourImgAlt: "tours-london-local",
+      tourTitle: "Explore Like a Local ",
+      tourPrice: 50,
+      tourDescription:
+        "Today many tourists want to run away from busy main streets and crowded parks, opting in favor of exploring the magic of a city like locals do, visiting legendary but not so popular shops, frequenting non-touristic establishments.",
+    },
   ];
 
   function createLondonTour(currentSlideIdx) {
@@ -65,6 +101,12 @@
     const secondSlideIdx =
       currentSlideIdx + 1 >= tours.length ? 0 : currentSlideIdx + 1;
     londonToursBlock.innerHTML += createLondonTour(secondSlideIdx);
+    const thirdSlideIdx =
+      secondSlideIdx + 1 >= tours.length ? 0 : secondSlideIdx + 1;
+    londonToursBlock.innerHTML += createLondonTour(thirdSlideIdx);
+    const forthSlideIdx =
+      thirdSlideIdx + 1 >= tours.length ? 0 : thirdSlideIdx + 1;
+    londonToursBlock.innerHTML += createLondonTour(forthSlideIdx);
   }
 
   function next() {
@@ -85,5 +127,5 @@
   const btnPrev = document.querySelector(".tours__next-arrow");
   btnPrev.addEventListener("click", prev);
 
-  console.log(rendertourCarousel());
+  rendertourCarousel();
 })();

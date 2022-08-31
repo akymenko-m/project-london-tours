@@ -123,7 +123,7 @@
         font-size: 14px;
     }
 
-    .book-tour__button {
+    .book-tour__button, .tour__button-book {
         background-color: var(--red-text-color);
         color: var(--white-color);
         font-size: 15px;
@@ -131,6 +131,7 @@
         width: max-content;
         padding: 10px 20px;
         border-radius: 8px;
+        cursor: pointer;
     }
 
 }
@@ -430,11 +431,4 @@
     gap: 10px;
 }
 
-.book-tour__arrows {
-    cursor: pointer;
-    font-size: 35px;
-    text-decoration: none;
-    border: none;
-    color: var(--light-grey-text-color);
-    background-color: transparent;
-}
+
