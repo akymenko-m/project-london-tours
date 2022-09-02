@@ -106,7 +106,7 @@
                   <span class="details-text">${tourInfo[currentSlideIndex].amountInfo}</span>
                 </div>
               </div>
-              <div class="book-tour__button">Book a Tour</div>
+              <div class="tour__button-book open-popup">Book a Tour</div>
             </div>
           </div>`;
   }

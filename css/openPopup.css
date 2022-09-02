@@ -1,0 +1,92 @@
+.popup-heading {
+    text-align: center;
+    color: var(--popup-grey-color);
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+}
+
+.popup__lighter-text {
+    font-size: 19px;
+}
+
+.book-a-tour__form-send {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.popup__input-style {
+    display: flex;
+    background: rgb(241, 241, 241);
+    border: 1px solid #d8d4d0;
+    border-radius: 4px;
+    width: 385px;
+    height: 40px;
+    padding: 0 13px;
+}
+
+.book__tour-popup-window {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.2);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.booking-popup {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--white-color);
+    padding: 1rem 1.5rem;
+    width: 32rem;
+    border-radius: 0.5rem;
+}
+
+.close-button-popup {
+    margin-left: auto;
+    padding: 0 7px 2px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: var(--red-text-color);
+    color: var(--white-color);
+    font-weight: bolder;
+}
+
+.booking__save-btn:hover, .close-button-popup:hover {
+    background-color: var(--black-color);
+    color: var(--white-color);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.booking__save-btn {
+    background-color: var(--red-text-color);
+    color: var(--white-color);
+    font-size: 15px;
+    font-weight: bold;
+    width: max-content;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: auto;
+}

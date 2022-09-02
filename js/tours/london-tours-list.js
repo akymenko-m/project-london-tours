@@ -111,13 +111,13 @@
 
   function next() {
     currentSlideIdx =
-      currentSlideIdx + 1 >= tours.length ? 0 : currentSlideIdx + 1;
+      currentSlideIdx + 4 >= tours.length ? 0 : currentSlideIdx + 4;
     rendertourCarousel();
   }
 
   function prev() {
     currentSlideIdx =
-      currentSlideIdx - 1 < 0 ? tours.length - 1 : currentSlideIdx - 1;
+      currentSlideIdx - 4 < 0 ? tours.length - 1 : currentSlideIdx - 4;
     rendertourCarousel();
   }
 

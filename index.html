@@ -235,7 +235,7 @@
                   beauty!
                 </span>
               </div>
-              <button class="tour__button-book" onclick="openPopup()">Book a Tour</button>
+              <div class="tour__button-book open-popup">Book a Tour</div>
               <div class="tours__info-calls-block">
                 <div class="tours__phone-icon_block">
                   <img src="img/tours/tours-phone-icon.png" alt="tours-phone-icon" class="phone-icon" />
@@ -260,23 +260,8 @@
           <div class="book-tour-block">
         </div>
       </div>
-      <!-- <div class="pricing-popup-window">
-        <div class="pricing-popup">
-            <div class="close-button-popup">&times;</div>
-            <h2 class="popup-heading">Contact Us</h2>
-            <form class="contact_form-send" action="/" method="post">
-                <input type="text" class="contact__inputs" placeholder="Enter your full name*" required>
-                <input type="text" class="contact__inputs" placeholder="Enter your phone number*" required>
-                <input type="text" class="contact__inputs" placeholder="Enter your e-mail*" required>
-                <textarea class="contact__textarea" name="contact__textarea" id="contact__textarea" cols="30"
-                    rows="10" placeholder="Type your message" maxlength="2000" required></textarea>
-                <button class="contact__btn">Scheudule a Visit</button>
-            </form>
-        </div>
-      </div> -->
     </section>
     <!--Mashkovska Tours End-->
-
     <!--Maryana Places block start-->
     <section id="places" class="places">
       <div class="places-title">
@@ -687,9 +672,26 @@
     </section>
   </footer>
   <!--Footer sections Oleh end-->
+   <div class="book__tour-popup-window">
+        <div class="booking-popup">
+            <div class="close-button-popup">&times;</div>
+            <h2 class="popup-heading">Welcome to London!</h2>
+            <span class="popup__lighter-text">Thinking about visiting London or already there? </span>
+            <span class="popup__lighter-text">Don't hesitate to contact us.</span>
+            <form class="book-a-tour__form-send" action="/" method="post">
+                <input type="text" placeholder="Your name*" class="popup__input-style" required> 
+                <input type="text" placeholder="Phone number*" class="popup__input-style" required> 
+                <input type="text" placeholder="Email*" class="popup__input-style" required> 
+                <input type="text" placeholder="Tour*" class="popup__input-style" required> 
+                <input type="text" placeholder="The language you speak*" class="popup__input-style" required> 
+                <input type="date" placeholder="Choose date*" class="popup__input-style" required> 
+                <div class="booking__save-btn">Send</div>
+            </form>
+        </div>
+    </div>
   <script src="js/tours/london-tours-list.js"></script>
   <script src="js/tours/book-a-tour.js"></script>
-  <script src="js/tours/pricing-popup.js"></script>
+  <script src="js/tours/tourOpenPopup.js"></script>
   <script src="js/testimonials-carousel.js"></script>
   <script src="js/gallery.js"></script>
   <script src="js/places-carousel.js"></script>
