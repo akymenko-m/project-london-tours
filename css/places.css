@@ -1,7 +1,7 @@
-.places-carousel {
+/* .places-carousel {
     display: flex;
-    
-}
+    flex-direction: row;
+} */
 .places-title {
     text-align: center;
     padding: 20px;
@@ -37,9 +37,27 @@
     line-height: 18.48px;
     font-weight: 700;
 }
-.carousel-places-slide {
-    width: 40%;
+.places__carousel {
+    /* display: flex; */
+    width: 30%;
     margin:auto;
     text-align: center;
     min-height: 915px;
+    /* flex-direction: row; */
+}
+.places-carousel__btn-prev {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-color: var(--red-text-color);
+    border-color: var(--red-text-color);
+    border-radius: 50%;
+}
+.places-carousel__btn-next {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-color: var(--red-text-color);
+    border-color: var(--red-text-color);
+    border-radius: 50%;
 }
