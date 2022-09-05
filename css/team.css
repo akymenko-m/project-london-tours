@@ -139,6 +139,7 @@
     .leah_marsden,
     .bailey_lawson {
         flex-direction: row;
+        min-height: 635px;
     }
 
     .lydia_mason__container-photo,
@@ -150,22 +151,11 @@
         flex: 50%;
     }
 
-    .flex-column>.lydia_mason__photo {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: 60% 40%;
-    }
-
     .lydia_mason__photo {
         width: 100%;
         height: 100%;
         object-fit: cover;
         object-position: 60% 40%;
-    }
-
-    .team__btn {
-        width: 30px;
     }
 
     .leah_marsden__photo,
@@ -174,6 +164,10 @@
         height: 100%;
         object-fit: cover;
         object-position: 50% 50%;
+    }
+
+    .team__btn {
+        width: 30px;
     }
 }
 
