@@ -1,14 +1,14 @@
 (function() {
-    const modal = document.querySelector(".need-help-window");
-    const trigger = document.querySelector(".need-help__popup");
-    const closeButton = document.querySelector(".close-help-window");
+    const helpWindowPopup = document.querySelector(".need-help-window");
+    const openHelpBtn = document.querySelector(".need-help__popup");
+    const closeHelpBtn = document.querySelector(".close-help-window");
     
-    function toggleModal(ev) {
-        modal.classList.toggle("show-modal");
-        ev.stopPropagation();
+    function openHelpWindow(wi) {
+        helpWindowPopup.classList.toggle("show-help-window");
+        wi.stopPropagation();
     }
     
-    trigger.addEventListener("click", toggleModal);
-    closeButton.addEventListener("click", toggleModal);
-    modal.addEventListener("click", toggleModal);
+    openHelpBtn.addEventListener("click", openHelpWindow);
+    closeHelpBtn.addEventListener("click", openHelpWindow);
+    helpWindowPopup.addEventListener("click", openHelpWindow);
 })();
