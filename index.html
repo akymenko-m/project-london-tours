@@ -257,7 +257,7 @@
         </div>
       </div>
       <div class="tours__book-tour">
-          <div class="book-tour-block">
+        <div class="book-tour-block">
         </div>
       </div>
     </section>
@@ -269,21 +269,21 @@
         <p class="places__subtitle">What To See In London.</p><br>
         <p class="motto">London is full of attractions and sights. Hurry up, they're waiting!</p><br>
       </div>
-      <div class="places-carousel"> 
-      <button class="places-carousel__btn-prev">
-        <img src="img/places/places-btn-prev.png" alt="Previous">
-      </button>
-      
-      <div class="places__carousel">
-        <div class="places-carousel__slides"></div>
+      <div class="places-carousel">
+        <button class="places-carousel__btn-prev">
+          <img src="img/places/places-btn-prev.png" alt="Previous">
+        </button>
+
+        <div class="places__carousel">
+          <div class="places-carousel__slides"></div>
+        </div>
+
+        <button class="places-carousel__btn-next">
+          <img src="img/places/places-btn-next.png" alt="Next">
+        </button>
       </div>
-      
-      <button class="places-carousel__btn-next">
-        <img src="img/places/places-btn-next.png" alt="Next">
-      </button>
-    </div>
     </section>
-        
+
     <!--Maryana Places block end-->
 
     <section id="overview" class="overview">
@@ -459,54 +459,52 @@
 
         <div id="gallery__photo-max-width-990" class="gallery__photo-max-width-990">
           <div class="gallery__photo gallery__photo-1">
-            <a href="img/gallery/london_square_near_metro.png" target="_blank"><img class="gallery__img"
-                src="img/gallery/london_square_near_metro.png" alt="London square near metro"></a>
+            <img class="gallery__img" src="img/gallery/london_square_near_metro.png" onclick="openLightbox();toSlide(1)"
+              alt="London square near metro">
           </div>
           <div class="gallery__photo gallery__photo-2">
-            <a href="img/gallery/london_cafe.png"><img class="gallery__img" src="img/gallery/london_cafe.png"
-                alt="London cafe"></a>
+            <img class="gallery__img" src="img/gallery/london_cafe.png" onclick="openLightbox();toSlide(2)"
+              alt="London cafe">
           </div>
           <div class="gallery__photo gallery__photo-3">
-            <a href="img/gallery/couple_with_a_map_near_the_fountain.png"><img class="gallery__img"
-                src="img/gallery/couple_with_a_map_near_the_fountain.png" alt="Couple with a map near the fountain"></a>
+            <img class="gallery__img" src="img/gallery/couple_with_a_map_near_the_fountain.png"
+              onclick="openLightbox();toSlide(3)" alt="Couple with a map near the fountain">
           </div>
           <div class="gallery__photo gallery__photo-4">
-            <a href="img/gallery/people_near_tower_bidge.png"><img class="gallery__img"
-                src="img/gallery/people_near_tower_bidge.png" alt="People near tower bidge"></a>
+            <img class="gallery__img" src="img/gallery/people_near_tower_bidge.png" onclick="openLightbox();toSlide(4)"
+              alt="People near tower bidge">
           </div>
           <div class="gallery__photo gallery__photo-5">
-            <a href="img/gallery/london_bridge_walk.png"> <img class="gallery__img"
-                src="img/gallery/london_bridge_walk.png" alt="London bridge walk"></a>
+            <img class="gallery__img" src="img/gallery/london_bridge_walk.png" onclick="openLightbox();toSlide(5)"
+              alt="London bridge walk">
           </div>
           <div class="gallery__photo gallery__photo-6">
-            <a href="img/gallery/london_city_view.png"><img class="gallery__img" src="img/gallery/london_city_view.png"
-                alt="London city view"></a>
+            <img class="gallery__img" src="img/gallery/london_city_view.png" onclick="openLightbox();toSlide(6)"
+              alt="London city view">
           </div>
         </div>
 
         <div id="gallery__photo" class="gallery__photo-min-width-991">
           <div class="gallery__photo-1 gallery__img">
-            <a href="img/gallery/london_square_near_metro.png" target="_blank"><img
-                src="img/gallery/london_square_near_metro.png" alt="London square near metro"></a>
+            <img src="img/gallery/london_square_near_metro.png" onclick="openLightbox();toSlide(1)"
+              alt="London square near metro">
           </div>
           <div class="gallery__photo-2 gallery__img">
-            <a href="img/gallery/london_cafe.png"><img src="img/gallery/london_cafe.png" alt="London cafe"></a>
+            <img src="img/gallery/london_cafe.png" onclick="openLightbox();toSlide(2)" alt="London cafe">
           </div>
           <div class="gallery__photo-3 gallery__img">
-            <a href="img/gallery/couple_with_a_map_near_the_fountain.png"><img
-                src="img/gallery/couple_with_a_map_near_the_fountain.png" alt="Couple with a map near the fountain"></a>
+            <img src="img/gallery/couple_with_a_map_near_the_fountain.png" onclick="openLightbox();toSlide(3)"
+              alt="Couple with a map near the fountain">
           </div>
           <div class="gallery__photo-4 gallery__img">
-            <a href="img/gallery/people_near_tower_bidge.png"><img src="img/gallery/people_near_tower_bidge.png"
-                alt="People near tower bidge"></a>
+            <img src="img/gallery/people_near_tower_bidge.png" onclick="openLightbox();toSlide(4)"
+              alt="People near tower bidge">
           </div>
           <div class="gallery__photo-5 gallery__img">
-            <a href="img/gallery/london_bridge_walk.png"> <img src="img/gallery/london_bridge_walk.png"
-                alt="London bridge walk"></a>
+            <img src="img/gallery/london_bridge_walk.png" onclick="openLightbox();toSlide(5)" alt="London bridge walk">
           </div>
           <div class="gallery__photo-6 gallery__img">
-            <a href="img/gallery/london_city_view.png"><img src="img/gallery/london_city_view.png"
-                alt="London city view"></a>
+            <img src="img/gallery/london_city_view.png" onclick="openLightbox();toSlide(6)" alt="London city view">
           </div>
         </div>
       </div>
@@ -674,42 +672,73 @@
     </section>
   </footer>
   <!--Footer sections Oleh end-->
-   <div class="book__tour-popup-window">
-        <div class="booking-popup">
-            <div class="close-button-popup">&times;</div>
-            <h2 class="popup-heading">Welcome to London!</h2>
-            <span class="popup__lighter-text">Thinking about visiting London or already there? </span>
-            <span class="popup__lighter-text">Don't hesitate to contact us.</span>
-            <form class="book-a-tour__form-send" action="/" method="post">
-                <input type="text" placeholder="Your name*" class="popup__input-style" required> 
-                <input type="text" placeholder="Phone number*" class="popup__input-style" required> 
-                <input type="text" placeholder="Email*" class="popup__input-style" required> 
-                <input type="text" placeholder="Tour*" class="popup__input-style" required> 
-                <input type="text" placeholder="The language you speak*" class="popup__input-style" required> 
-                <input type="date" placeholder="Choose date*" class="popup__input-style" required> 
-                <div class="booking__save-btn">Send</div>
-            </form>
-        </div>
+
+  <!--Book tour popup begin-->
+  <div class="book__tour-popup-window">
+    <div class="booking-popup">
+      <div class="close-button-popup">&times;</div>
+      <h2 class="popup-heading">Welcome to London!</h2>
+      <span class="popup__lighter-text">Thinking about visiting London or already there? </span>
+      <span class="popup__lighter-text">Don't hesitate to contact us.</span>
+      <form class="book-a-tour__form-send" action="/" method="post">
+        <input type="text" placeholder="Your name*" class="popup__input-style" required>
+        <input type="text" placeholder="Phone number*" class="popup__input-style" required>
+        <input type="text" placeholder="Email*" class="popup__input-style" required>
+        <input type="text" placeholder="Tour*" class="popup__input-style" required>
+        <input type="text" placeholder="The language you speak*" class="popup__input-style" required>
+        <input type="date" placeholder="Choose date*" class="popup__input-style" required>
+        <div class="booking__save-btn">Send</div>
+      </form>
     </div>
-    <button class="need-help__popup">
-      <img src="img/places/contact-popup.webp" alt="Need help?">
-    </button>
-    <div class="need-help-window">
-      <div class="help-window-content">
+  </div>
+  <button class="need-help__popup">
+    <img src="img/places/contact-popup.webp" alt="Need help?">
+  </button>
+  <div class="need-help-window">
+    <div class="help-window-content">
       <div class="close-help-window">&times;</div>
       <h3 class="need-help-window-screen">Let Us call you back in 30 seconds! </h3>
       <div class="need-help-message-border">
         <input class="need-help-message-input" type="text" placeholder="Phone number">
       </div>
-      </div>
     </div>
-  
+  </div>
+  <!--Book tour popup end-->
+
+  <!--Gallery modal window begin-->
+  <div id="GalleryLightbox" class="gallery__modal">
+    <span class="gallery__close-bnt" onclick="closeLightbox()">&times;</span>
+    <div class="gallery__modal-content">
+      <div class="gallery__modalslide">
+        <img src="img/gallery/london_square_near_metro.png" class="gallery__image-slide">
+      </div>
+      <div class="gallery__modalslide">
+        <img src="img/gallery/london_cafe.png" class="gallery__image-slide">
+      </div>
+      <div class="gallery__modalslide">
+        <img src="img/gallery/couple_with_a_map_near_the_fountain.png" class="gallery__image-slide">
+      </div>
+      <div class="gallery__modalslide">
+        <img src="img/gallery/people_near_tower_bidge.png" class="gallery__image-slide">
+      </div>
+      <div class="gallery__modalslide">
+        <img src="img/gallery/london_bridge_walk.png" class="gallery__image-slide">
+      </div>
+      <div class="gallery__modalslide">
+        <img src="img/gallery/london_city_view.png" class="gallery__image-slide">
+      </div>
+      <a class="gallery__btn-previous" onclick="changeSlide(-1)">&#10094;</a>
+      <a class="gallery__btn-next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+  </div>
+  <!--Gallery modal window end-->
+
   <script src="js/help-Popup.js"></script>
   <script src="js/tours/london-tours-list.js"></script>
   <script src="js/tours/book-a-tour.js"></script>
   <script src="js/tours/tourOpenPopup.js"></script>
   <script src="js/testimonials-carousel.js"></script>
-  <script src="js/gallery.js"></script>
+  <script src="js/gallery-modal.js"></script>
   <script src="js/places-carousel.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
