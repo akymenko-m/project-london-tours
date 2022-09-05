@@ -1,9 +1,7 @@
 .places-carousel {
-    /* display: block;*/
-    /* flex-direction: column;
     display: flex;
     justify-content: space-between;
-    align-items: center; */
+    align-items: center;
 }
 .places-title {
     text-align: center;
@@ -41,33 +39,24 @@
     font-weight: 700;
 }
 .places__carousel {
-    width: 300px;
-    /* display: flex; */
-    /* justify-content: space-around; */
-    /* display: flex;
+    display: flex;
+    justify-content: space-around;
     width: 40%;
     margin:auto;
     text-align: center;
     min-height: 915px;
-    justify-content: space-around;*/
-    /* flex-direction: column; */
+    justify-content: space-around;
 }
 
 .places-carousel__btn-prev {
-    display: inline-block;
     width: 32px;
     height: 32px;
     border: 0;
-    /* background-color: var(--red-text-color); */
-    border-color: var(--red-text-color);
     border-radius: 50%;
 }
 .places-carousel__btn-next {
-    display: inline-block;
     width: 32px;
     height: 32px;
     border: 0;
-    background-color: var(--red-text-color);
-    /* border-color: var(--red-text-color); */
-    /* border-radius: 50%; */
+    border-radius: 50%;
 }
