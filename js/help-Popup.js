@@ -1,16 +1,14 @@
-(function () {
-    const helpPopupWindow = document.querySelector(".book__tour-popup-window");
-    const openPopupBtn = document.querySelectorAll(".open-popup");
-    const closeBtnPopup = document.querySelector(".close-button-popup");
-  
-    function openPopup(el) {
-      tourPopupWindow.classList.toggle("show-modal");
-      el.stopPropagation();
+(function() {
+    const modal = document.querySelector(".need-help-window");
+    const trigger = document.querySelector(".need-help__popup");
+    const closeButton = document.querySelector(".close-help-window");
+    
+    function toggleModal(ev) {
+        modal.classList.toggle("show-modal");
+        ev.stopPropagation();
     }
-  
-    openPopupBtn.forEach((btns) => {
-      btns.addEventListener("click", openPopup);
-    });
-  
-    closeBtnPopup.addEventListener("click", openPopup);
-  })();
+    
+    trigger.addEventListener("click", toggleModal);
+    closeButton.addEventListener("click", toggleModal);
+    modal.addEventListener("click", toggleModal);
+})();
