@@ -1,0 +1,11 @@
+.need-help-window {
+    display: flex;
+    align-items:flex-end ;
+    flex-direction: column;
+}
+need-help-message-border {
+    border-color: var(--subtitle-grey-color);
+}
+.send-message-icon {
+    max-height: 25px;
+}
