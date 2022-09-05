@@ -1,5 +1,6 @@
 .need-help__popup {
-    background-color: skyblue;
+    border: 0;
+    background-color: rgb(23, 143, 235);
     height: 75px;
     width: 75px;
     padding-left: 5px;
@@ -12,6 +13,9 @@
     bottom: 5px;
     left: 1%;
 }    
+.need-help__popup:hover {
+    box-shadow: 0 0 20px rgba(135, 206, 235, 1);
+}
 .need-help-window {
     position: fixed;
     left: 0;
