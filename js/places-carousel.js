@@ -9,7 +9,7 @@
               zoology, entomology, mineralogy, and paleontology. But the museum is best known for its
               unique collection of dinosaur skeletons, which includes the sceleton of a diplodocus 26
               meters long and a model of Tyrannosaurus.</p>
-            <a class="read-more-places" href="https://yp34v.weblium.site/"><span>Read more →</span></a>
+            <a class="read-more-places" href="https://koldovsky.github.io/709-team-05/"><span>Read more →</span></a>
           </div>`,
 
         `<div class="carousel-places-slide">
@@ -22,7 +22,7 @@
               Majesty and her family members for dinner parties, official receptions, and other special
               occasions. In August-September, when Elizabeth II leaves her residence, all 19 state rooms
               become available for visitors.</p>
-            <a class="read-more-places" href="https://yp34v.weblium.site/"><span>Read more →</span></a>
+            <a class="read-more-places" href="https://koldovsky.github.io/709-team-05/"><span>Read more →</span></a>
           </div>`,
 
         `<div class="carousel-places-slide">
@@ -35,7 +35,7 @@
               Majesty and her family members for dinner parties, official receptions, and other special
               occasions. In August-September, when Elizabeth II leaves her residence, all 19 state rooms
               become available for visitors.</p>
-            <a class="read-more-places" href="https://yp34v.weblium.site/"><span>Read more →</span></a>
+            <a class="read-more-places" href="https://koldovsky.github.io/709-team-05/"><span>Read more →</span></a>
           </div>`
   ];
 
