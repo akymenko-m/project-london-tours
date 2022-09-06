@@ -13,6 +13,9 @@
 }
 .places-carousel-image {
     max-height: 400px;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .places-title {
     text-align: center;
@@ -23,6 +26,7 @@
     font-weight: bold;
     font-size: 12px;
     line-height: 18.48px;
+    padding-top: 30px;
 }
 .places__subtitle {
     color: var(--subtitle-grey-color);
