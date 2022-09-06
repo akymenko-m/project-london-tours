@@ -91,3 +91,13 @@
     color: var(--white-color);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
+@media (max-width: 550px) {
+    .help-window-content {
+        width: 20rem;
+    }
+}
+@media (max-width: 550px) {
+    .need-help-phone-input {
+        width: 200px;
+    }
+}
