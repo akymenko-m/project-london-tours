@@ -34,8 +34,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
-    padding: 1rem 1.5rem;
-    width: 24rem;
+    padding: 1rem 1rem;
+    width: 30rem;
     border-radius: 0.5rem;
 }
 .close-help-window {
@@ -44,8 +44,14 @@
     line-height: 1.5rem;
     text-align: center;
     cursor: pointer;
-    border-radius: 0.25rem;
-    background-color: lightgray;
+    border-radius: 4px;
+    background-color: var(--red-text-color);
+    color: var(--white-color)
+}
+.close-help-window:hover {
+    background-color: var(--black-color);
+    color: var(--white-color);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 .show-help-window {
     opacity: 1;
@@ -53,9 +59,35 @@
     transform: scale(1.0);
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
-/* need-help-message-border {
-    border-color: var(--subtitle-grey-color);
+.need-help-window-screen {
+    font-family: "Ubuntu", sans-serif;
+    margin-bottom: 2rem;
+    color: var(--subtitle-grey-color);
+    font-size: 26px;
+    font-weight: bold;
 }
-.send-message-icon {
-    max-height: 25px;
-} */
+.need-help-phone-input {
+    border: 1px solid #d8d4d0;
+    border-radius: 4px;
+    border-color: var(--line-grey-color);
+    width: 350px;
+    height: 40px;
+    padding: 0 13px;
+    background: rgb(241, 241, 241);
+}
+.need-help-submit {
+    border: 10px 10px 10px 10px;
+    border-color: var(--red-text-color);
+    border-radius: 4px;
+    width: 75px;
+    height: 42px;
+    background-color: var(--red-text-color);
+    color: var(--white-color);
+    font-weight: bold;
+}
+.need-help-submit:hover {
+    border-color: var(--black-color);
+    background-color: var(--black-color);
+    color: var(--white-color);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
