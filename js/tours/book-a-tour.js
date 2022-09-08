@@ -11,6 +11,7 @@
       monthsInfo: "November-March",
       amountTitleText: "Capacity:",
       amountInfo: "30 people",
+      function: "function_1",
     },
 
     {
@@ -24,6 +25,7 @@
       monthsInfo: "10 October, 2022",
       amountTitleText: "Group:",
       amountInfo: "5-7 people",
+      function: "function_2",
     },
 
     {
@@ -37,6 +39,7 @@
       monthsInfo: "10 October, 2022",
       amountTitleText: "Group:",
       amountInfo: "5-7 people",
+      function: "function_3",
     },
 
     {
@@ -50,6 +53,7 @@
       monthsInfo: "10 October, 2022",
       amountTitleText: "Group:",
       amountInfo: "5-7 people",
+      function: "function_4",
     },
 
     {
@@ -63,6 +67,7 @@
       monthsInfo: "10 October, 2022",
       amountTitleText: "Group:",
       amountInfo: "20 people",
+      function: "function_5",
     },
 
     {
@@ -76,6 +81,7 @@
       monthsInfo: "November-December",
       amountTitleText: "Group:",
       amountInfo: "15 people",
+      function: "function_6",
     },
   ];
 
@@ -106,27 +112,45 @@
                   <span class="details-text">${tourInfo[currentSlideIndex].amountInfo}</span>
                 </div>
               </div>
-              <div class="tour__button-book open-popup">Book a Tour</div>
+              <div class="tour__button-book" id="${tourInfo[currentSlideIndex].function}">Book a Tour</div>
             </div>
           </div>`;
   }
 
+  const data = [
+    "function_1",
+    "function_2",
+    "function_3",
+    "function_4",
+    "function_5",
+    "function_6",
+  ];
+
   let currentSlideIndex = 0;
+  const tourPopupWindow = document.querySelector(".book__tour-popup-window");
+  const closeBtnPopupCarousel = document.querySelector(".close-button-popup");
+  function openPopup(el) {
+    tourPopupWindow.classList.toggle("show-modal");
+    el.stopPropagation();
+  }
 
   function renderCarousel() {
     const toursInfoContainer = document.querySelector(".book-tour-block");
+
     toursInfoContainer.innerHTML = bookingTourInfo(currentSlideIndex);
+
+    const abc = document.getElementById(data[currentSlideIndex]);
+
+    abc.addEventListener("click", () => {
+      openPopup();
+    });
+
+    closeBtnPopupCarousel.addEventListener("click", openPopup);
   }
 
   function next() {
     currentSlideIndex =
       currentSlideIndex + 1 >= tourInfo.length ? 0 : currentSlideIndex + 1;
-    renderCarousel();
-  }
-
-  function prev() {
-    currentSlideIndex =
-      currentSlideIndex - 1 < 0 ? tourInfo.length - 1 : currentSlideIndex - 1;
     renderCarousel();
   }
 

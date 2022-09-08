@@ -674,24 +674,26 @@
   <!--Footer sections Oleh end-->
    <div class="book__tour-popup-window">
         <div class="booking-popup">
-            <div class="close-button-popup">&times;</div>
+            <div class="close-button-popup" id="close-button-popup ">&times;</div>
             <h2 class="popup-heading">Welcome to London!</h2>
             <span class="popup__lighter-text">Thinking about visiting London or already there? </span>
             <span class="popup__lighter-text">Don't hesitate to contact us.</span>
-            <form class="book-a-tour__form-send" action="/" method="post">
-                <input type="text" placeholder="Your name*" class="popup__input-style" required> 
-                <input type="text" placeholder="Phone number*" class="popup__input-style" required> 
-                <input type="text" placeholder="Email*" class="popup__input-style" required> 
-                <input type="text" placeholder="Tour*" class="popup__input-style" required> 
-                <input type="text" placeholder="The language you speak*" class="popup__input-style" required> 
-                <input type="date" placeholder="Choose date*" class="popup__input-style" required> 
-                <div class="booking__save-btn">Send</div>
+            <form  class="book-a-tour__form-send" id="contact-form-nodejs" action="contact" method="POST">
+                <input type="text" placeholder="Your name*" id="input-name" class="popup__input-style" required> 
+                <input type="text" placeholder="Phone number*" id="input-number" class="popup__input-style" required> 
+                <input type="text" placeholder="Email*" id="input-email" class="popup__input-style" required> 
+                <input type="text" placeholder="Tour*" id="input-tour" class="popup__input-style" required> 
+                <input type="text" placeholder="The language you speak*" id="input-language" class="popup__input-style" required> 
+                <input type="date" placeholder="Choose date*" id="input-date" class="popup__input-style" required> 
+                <button type="submit" class="booking__save-btn" id="my-form-button">Submit</button>    
             </form>
+            <p id="form-status"></p>
         </div>
     </div>
   <script src="js/tours/london-tours-list.js"></script>
   <script src="js/tours/book-a-tour.js"></script>
   <script src="js/tours/tourOpenPopup.js"></script>
+  <script src="js/booking-form-node.js"></script>
   <script src="js/testimonials-carousel.js"></script>
   <script src="js/gallery.js"></script>
   <script src="js/places-carousel.js"></script>
