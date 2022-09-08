@@ -149,9 +149,9 @@
 }
 
 .banks-logo {
-    padding-left: 15px;
     margin-bottom: 50px;
     display: block;
+    width: 270px;
 }
 
 .nav-text {
@@ -247,5 +247,57 @@
 @media (min-width: 768px) {
     .contacts__article {
         font-size: 39px;
+    }
+
+    .contacts__about {
+        width: 50%;
+    }
+
+    .contacts__info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        position: relative;
+        left: 600px;
+        bottom: 420px;
+    }
+
+    .footer-logo {
+        text-align: left;
+        margin: 0;
+    }
+
+    .footer__text-slogan {
+        text-align: left;
+    }
+
+    .banks-logo {
+        width: 243px;
+        padding: 0;
+    }
+
+    .footer__general-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .footer__text-link {
+        font-size: 15px;
+    }
+
+    .footer__nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer__end {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer__icon-social-links {
+        width: 45px;
+        position: relative;
+        left: 570px;
+        bottom: 20px;
     }
 }
