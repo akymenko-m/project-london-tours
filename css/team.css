@@ -33,18 +33,24 @@
     width: 25px;
 }
 
-.lydia_mason {
+.lydia_mason,
+.leah_marsden,
+.bailey_lawson {
     display: flex;
     flex-direction: column;
     margin: 0 20px 0 20px;
 }
 
-.lydia_mason__general {
+.lydia_mason__general,
+.leah_marsden__general,
+.bailey_lawson__general {
     background-color: var(--white-color);
     padding: 30px 60px 30px 30px;
 }
 
-.lydia_mason__photo {
+.lydia_mason__photo,
+.leah_marsden__photo,
+.bailey_lawson__photo {
     width: 100%;
 }
 
@@ -58,7 +64,9 @@
     width: 25px;
 }
 
-.lydia_mason__name {
+.lydia_mason__name,
+.leah_marsden__name,
+.bailey_lawson__name {
     font-family: "Ubuntu";
     font-size: 24px;
     font-weight: 500;
@@ -70,7 +78,9 @@
     width: 10%;
 }
 
-.lydia_mason__position {
+.lydia_mason__position,
+.leah_marsden__position,
+.bailey_lawson__position {
     padding-top: 15px;
     font-size: 14px;
     font-style: italic;
@@ -79,7 +89,11 @@
 }
 
 .lydia_mason__profile-past,
-.lydia_mason__profile-now {
+.lydia_mason__profile-now,
+.leah_marsden__profile-past,
+.leah_marsden__profile-now,
+.bailey_lawson__profile-past,
+.bailey_lawson__profile-now {
     padding-top: 20px;
     font-size: 17px;
     font-weight: 400;
@@ -97,99 +111,9 @@
 }
 
 .lydia_mason__tours,
+.leah_marsden__tours,
+.bailey_lawson__tours,
 .team__contacts {
-    padding-left: 10px;
-    font-size: 17px;
-    font-weight: 400;
-    color: var(--dark-grey-text-color);
-    text-decoration: none;
-}
-
-.leah_marsden {
-    display: flex;
-    flex-direction: column;
-    margin: 0 20px 0 20px;
-}
-
-.leah_marsden__general {
-    background-color: var(--white-color);
-    padding: 30px 60px 30px 30px;
-}
-
-.leah_marsden__photo {
-    width: 100%;
-}
-
-.leah_marsden__name {
-    font-family: "Ubuntu";
-    font-size: 24px;
-    font-weight: 500;
-    padding-bottom: 15px;
-}
-
-.leah_marsden__position {
-    padding-top: 15px;
-    font-size: 14px;
-    font-style: italic;
-    font-weight: 400;
-    color: var(--dark-grey-text-color);
-}
-
-.leah_marsden__profile-past,
-.leah_marsden__profile-now {
-    padding-top: 20px;
-    font-size: 17px;
-    font-weight: 400;
-    color: var(--light-grey-text-color);
-}
-
-.leah_marsden__tours {
-    padding-left: 10px;
-    font-size: 17px;
-    font-weight: 400;
-    color: var(--dark-grey-text-color);
-    text-decoration: none;
-}
-
-.bailey_lawson {
-    display: flex;
-    flex-direction: column;
-    margin: 0 20px 0 20px;
-}
-
-.bailey_lawson__general {
-    background-color: var(--white-color);
-    padding: 30px 60px 30px 30px;
-}
-
-.bailey_lawson__photo {
-    width: 100%;
-}
-
-.bailey_lawson__name {
-    font-family: "Ubuntu";
-    font-size: 24px;
-    font-weight: 500;
-    padding-bottom: 15px;
-}
-
-.bailey_lawson__position {
-    padding-top: 15px;
-    font-size: 14px;
-    font-style: italic;
-    font-weight: 400;
-    color: var(--dark-grey-text-color);
-}
-
-.bailey_lawson__profile-past,
-.bailey_lawson__profile-now {
-    padding-top: 20px;
-    font-size: 17px;
-    font-weight: 400;
-    color: var(--light-grey-text-color);
-}
-
-.bailey_lawson__tours {
     padding-left: 10px;
     font-size: 17px;
     font-weight: 400;
@@ -209,20 +133,22 @@
     }
 }
 
-@media (min-width: 768px) {    
-    .lydia_mason {
+@media (min-width: 768px) {
+
+    .lydia_mason,
+    .leah_marsden,
+    .bailey_lawson {
         flex-direction: row;
+        min-height: 635px;
     }
 
     .lydia_mason__container-photo,
-    .lydia_mason__general {
+    .lydia_mason__general,
+    .leah_marsden__container-photo,
+    .leah_marsden__general,
+    .bailey_lawson__container-photo,
+    .bailey_lawson__general {
         flex: 50%;
-    }
-    .flex-column > .lydia_mason__photo {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: 60% 40%;
     }
 
     .lydia_mason__photo {
@@ -232,40 +158,16 @@
         object-position: 60% 40%;
     }
 
-    .team__btn {
-        width: 30px;
-    }
-
-    .leah_marsden {
-        flex-direction: row;
-    }
-
-    .leah_marsden__container-photo,
-    .leah_marsden__general {
-        flex: 50%;
-    }
-
-    .leah_marsden__photo {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: 50% 50%;
-    }
-
-    .bailey_lawson {
-        flex-direction: row;
-    }
-
-    .bailey_lawson__container-photo,
-    .bailey_lawson__general {
-        flex: 50%;
-    }
-
+    .leah_marsden__photo,
     .bailey_lawson__photo {
         width: 100%;
         height: 100%;
         object-fit: cover;
         object-position: 50% 50%;
+    }
+
+    .team__btn {
+        width: 30px;
     }
 }
 

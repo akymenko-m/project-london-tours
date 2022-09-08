@@ -19,8 +19,6 @@
     font-size: 28px;
     font-weight: 700;
     color: var(--white-color);
-    display: flex;
-    flex-direction: column;
     margin-bottom: 25px;
 }
 
@@ -244,4 +242,10 @@
     display: inline-block;
     gap: 20px;
     padding: 0 5px 0 5px;
+}
+
+@media (min-width: 768px) {
+    .contacts__article {
+        font-size: 39px;
+    }
 }
