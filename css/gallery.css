@@ -28,6 +28,11 @@
     margin-bottom: 30px;
 }
 
+.mobile-images__gallery-photo,
+.desktop-images__gallery-photo {
+    cursor: pointer;
+}
+
 .gallery__photo-min-width-991 {
     display: none;
 }
@@ -38,6 +43,7 @@
     gap: 25px;
     padding: 0 20px;
 }
+
 .mobile-images__gallery-photo {
     margin: 25px 0;
 }
